@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shamit Ahmed - Game Developer Portfolio</title>
+    <title>Uswah Saeed - Game Developer Portfolio</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
     <script src="/assets/js/script.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -23,60 +23,89 @@
           },
         },
       };
+
+      function showMobileNav() {
+        const nav = document.getElementById("nav");
+        if (nav.classList.contains("hidden")) {
+          nav.classList.remove("hidden");
+        } else {
+          nav.classList.add("hidden");
+        }
+      }
     </script>
   </head>
 
-  <body class="bg-gray-50 text-gray-900 font-sans relative  ">
-    <!-- Navigation -->
-    <aside
-      id="sidebar"
-      class="hidden md:flex fixed top-0 left-0 h-full  bg-gray-50 shadow-lg  flex-col justify-between z-50 "
-    >
-      <!-- Logo + Menu -->
-      <div>
-        <!-- Logo -->
-        <div class="p-6">
-          <h1 class="font-bold text-2xl uppercase text-gray-900">
-            Uswah Saeed
-          </h1>
+  <body class="bg-gray-50 text-gray-900 font-sans relative">
+    <main class="">
+      <!-- Navigation -->
+      <aside
+        id="sidebar"
+        class="hidden w-64 lg:flex h-full fixed top-0 left-0 bg-gray-50 shadow-lg flex-col justify-between z-50"
+      >
+        <!-- Logo + Menu -->
+        <div>
+          <!-- Logo -->
+          <div class="p-6">
+            <h1 class="font-bold text-2xl uppercase text-gray-900">
+              Uswah Saeed
+            </h1>
+          </div>
+
+          <!-- Menu Links -->
+          <nav class="flex flex-col space-y-4 px-6 text-2xl">
+            <a href="#" class="hover:text-accent-blue text-gray-900 transition"
+              >About</a
+            >
+            <a href="#" class="hover:text-accent-blue text-gray-900 transition"
+              >Projects</a
+            >
+            <a href="#" class="hover:text-accent-blue text-gray-900 transition"
+              >Experience</a
+            >
+            
+            <a href="#" class="hover:text-accent-blue text-gray-900 transition"
+              >Skills & Tools</a
+            >
+          </nav>
         </div>
 
-        <!-- Menu Links -->
-        <nav class="flex flex-col space-y-4 px-6 text-2xl">
-          <a href="#" class="hover:text-accent-blue text-gray-900 transition"
-            >About</a
+        <!-- Social Links -->
+        <div class="flex justify-center space-x-4 p-6">
+          <a
+            href="https://uswahsaeed.itch.io/"
+            target="_blank"
+            class="text-gray-900 hover:text-black transition"
           >
-          <a href="#" class="hover:text-accent-blue text-gray-900 transition"
-            >Projects</a
-          >
-          <a href="#" class="hover:text-accent-blue text-gray-900 transition"
-            >Experience</a
-          >
-          <a href="#" class="hover:text-accent-blue text-gray-900 transition"
-            >Research</a
-          >
-          <a href="#" class="hover:text-accent-blue text-gray-900 transition"
-            >Skills & Tools</a
-          >
-        </nav>
-      </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13.828 10.172a4 4 0 010 5.656l-1.414 1.414a4 4 0 01-5.656-5.656l1.414-1.414M10.172 13.828a4 4 0 010-5.656l1.414-1.414a4 4 0 015.656 5.656l-1.414 1.414"
+              />
+            </svg>
+          </a>
+          <!-- LinkedIn -->
 
-      <!-- Social Links -->
-      <div class="flex justify-center space-x-4 p-6">
-        <!-- LinkedIn -->
-        <a
-          href="https://linkedin.com/in/shamitahmed/"
-          target="_blank"
-          class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 hover:bg-blue-600 hover:text-white transition"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="currentColor"
-            viewBox="0 0 24 24"
-            class="w-5 h-5"
+          <a
+            href="https://www.linkedin.com/in/uswah-saeed/"
+            target="_blank"
+            class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 hover:bg-blue-600 hover:text-white transition"
           >
-            <path
-              d="M20.452 20.452h-3.554v-5.568c0-1.328-.026-3.037-1.852-3.037-1.853 
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              class="w-5 h-5"
+            >
+              <path
+                d="M20.452 20.452h-3.554v-5.568c0-1.328-.026-3.037-1.852-3.037-1.853 
              0-2.136 1.447-2.136 2.941v5.664H9.356V9h3.414v1.561h.049c.477-.9 
              1.637-1.852 3.369-1.852 3.6 0 4.268 2.369 
              4.268 5.455v6.288zM5.337 7.433a2.062 
@@ -86,24 +115,24 @@
              23.225.792 24 1.771 24h20.451C23.2 24 
              24 23.225 24 22.271V1.729C24 .774 
              23.2 0 22.225 0z"
-            />
-          </svg>
-        </a>
+              />
+            </svg>
+          </a>
 
-        <!-- YouTube -->
-        <a
-          href="https://youtube.com/@shamitahmed/videos"
-          target="_blank"
-          class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 hover:bg-red-600 hover:text-white transition"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="currentColor"
-            viewBox="0 0 24 24"
-            class="w-5 h-5"
+          <!-- YouTube -->
+          <a
+            href="https://youtube.com/@shamitahmed/videos"
+            target="_blank"
+            class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 hover:bg-red-600 hover:text-white transition"
           >
-            <path
-              d="M23.498 6.186a2.974 2.974 0 00-2.096-2.104C19.458 
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              class="w-5 h-5"
+            >
+              <path
+                d="M23.498 6.186a2.974 2.974 0 00-2.096-2.104C19.458 
              3.5 12 3.5 12 3.5s-7.458 0-9.402.582a2.974 
              2.974 0 00-2.096 2.104A30.114 30.114 
              0 000 12a30.114 30.114 0 00.502 
@@ -114,26 +143,26 @@
              30.114 0 0024 12a30.114 30.114 
              0 00-.502-5.814zM9.75 
              15.02V8.98l6.5 3.02-6.5 3.02z"
-            />
-          </svg>
-        </a>
+              />
+            </svg>
+          </a>
 
-        <!-- GitHub -->
-        <a
-          href="https://github.com/shamitahmed"
-          target="_blank"
-          class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-800 hover:text-white transition"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="currentColor"
-            viewBox="0 0 24 24"
-            class="w-5 h-5"
+          <!-- GitHub -->
+          <a
+            href="https://github.com/shamitahmed"
+            target="_blank"
+            class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-800 hover:text-white transition"
           >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M12 .297c-6.63 0-12 5.373-12 12 
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              class="w-5 h-5"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12 .297c-6.63 0-12 5.373-12 12 
              0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 
              0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.61-4.042-1.61
              -.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 
@@ -151,316 +180,284 @@
              2.22 0 1.606-.015 
              2.896-.015 3.286 0 .315.21.69.825.57C20.565 
              22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+              />
+            </svg>
+          </a>
+        </div>
+      </aside>
+      <div class="flex items-center justify-between p-4 bg-gray-100 lg:hidden">
+        <div class="p-2">
+          <h1 class="font-bold text-2xl uppercase text-gray-900">
+            Uswah Saeed
+          </h1>
+        </div>
+        <!-- Burger button -->
+        <button
+          id="menu-btn"
+          onclick="showMobileNav()"
+          class="p-2 rounded-md bg-gray-200 text-white"
+        >
+          <!-- Icon -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            d
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
             />
           </svg>
-        </a>
+        </button>
       </div>
-    </aside>
 
-    <main class="">
-      <!-- Hero Section with Game Screenshots -->
-      <div
-        class="relative bg-gray-900 min-h-[70vh] background-image flex flex-col justify-between absolute md:-top-24 text-gray-50 md:py-10"
-      >
-        <!-- Bio Section -->
+      <!-- Mobile Nav -->
+      <nav id="nav" class="hidden">
+        <!-- Logo + Menu -->
+        <div>
+          <!-- Logo -->
+
+          <!-- Menu Links -->
+          <nav class="flex flex-col space-y-4 px-6 text-2xl">
+            <a href="#" class="hover:text-accent-blue text-gray-900 transition"
+              >About</a
+            >
+            <a href="#" class="hover:text-accent-blue text-gray-900 transition"
+              >Projects</a
+            >
+            <a href="#" class="hover:text-accent-blue text-gray-900 transition"
+              >Experience</a
+            >
+            
+            <a href="#" class="hover:text-accent-blue text-gray-900 transition"
+              >Skills & Tools</a
+            >
+          </nav>
+        </div>
+
+        <!-- Social Links -->
+        <div class="flex justify-center space-x-4 p-6">
+          <!-- LinkedIn -->
+          <a
+            href="https://uswahsaeed.itch.io/"
+            target="_blank"
+            class="text-gray-900 hover:text-black transition"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13.828 10.172a4 4 0 010 5.656l-1.414 1.414a4 4 0 01-5.656-5.656l1.414-1.414M10.172 13.828a4 4 0 010-5.656l1.414-1.414a4 4 0 015.656 5.656l-1.414 1.414"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/uswah-saeed/"
+            target="_blank"
+            class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 hover:bg-blue-600 hover:text-white transition"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              class="w-5 h-5"
+            >
+              <path
+                d="M20.452 20.452h-3.554v-5.568c0-1.328-.026-3.037-1.852-3.037-1.853 
+             0-2.136 1.447-2.136 2.941v5.664H9.356V9h3.414v1.561h.049c.477-.9 
+             1.637-1.852 3.369-1.852 3.6 0 4.268 2.369 
+             4.268 5.455v6.288zM5.337 7.433a2.062 
+             2.062 0 11.002-4.124 2.062 2.062 
+             0 01-.002 4.124zM6.956 20.452H3.716V9h3.24v11.452zM22.225 
+             0H1.771C.792 0 0 .774 0 1.729v20.542C0 
+             23.225.792 24 1.771 24h20.451C23.2 24 
+             24 23.225 24 22.271V1.729C24 .774 
+             23.2 0 22.225 0z"
+              />
+            </svg>
+          </a>
+
+          <!-- YouTube -->
+          <a
+            href="https://youtube.com/@shamitahmed/videos"
+            target="_blank"
+            class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 hover:bg-red-600 hover:text-white transition"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              class="w-5 h-5"
+            >
+              <path
+                d="M23.498 6.186a2.974 2.974 0 00-2.096-2.104C19.458 
+             3.5 12 3.5 12 3.5s-7.458 0-9.402.582a2.974 
+             2.974 0 00-2.096 2.104A30.114 30.114 
+             0 000 12a30.114 30.114 0 00.502 
+             5.814 2.974 2.974 0 002.096 
+             2.104C4.542 20.5 12 20.5 12 
+             20.5s7.458 0 9.402-.582a2.974 
+             2.974 0 002.096-2.104A30.114 
+             30.114 0 0024 12a30.114 30.114 
+             0 00-.502-5.814zM9.75 
+             15.02V8.98l6.5 3.02-6.5 3.02z"
+              />
+            </svg>
+          </a>
+
+          <!-- GitHub -->
+          <a
+            href="https://github.com/shamitahmed"
+            target="_blank"
+            class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-800 hover:text-white transition"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              class="w-5 h-5"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12 .297c-6.63 0-12 5.373-12 12 
+             0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 
+             0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.61-4.042-1.61
+             -.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 
+             1.205.084 1.84 1.237 1.84 1.237 1.07 
+             1.835 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.605
+             -2.665-.3-5.466-1.334-5.466-5.932 
+             0-1.31.465-2.38 1.235-3.22-.135-.303
+             -.54-1.523.105-3.176 0 0 1.005-.322 
+             3.3 1.23a11.5 11.5 0 013.003-.404c1.02.005 
+             2.045.138 3.003.404 2.28-1.552 3.285-1.23 
+             3.285-1.23.645 1.653.24 2.873.12 
+             3.176.765.84 1.23 1.91 1.23 3.22 
+             0 4.61-2.805 5.628-5.475 
+             5.922.43.37.81 1.096.81 
+             2.22 0 1.606-.015 
+             2.896-.015 3.286 0 .315.21.69.825.57C20.565 
+             22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+              />
+            </svg>
+          </a>
+        </div>
+      </nav>
+      <main class="lg:ml-64">
+        <!-- Hero Section with Game Screenshots -->
         <div
-          class="max-w-6xl mx-auto px-4 flex justify-center items-center flex-1"
+          class="relative bg-gray-900 min-h-[70vh] background-image flex flex-col justify-between absolute md:-top-24 text-gray-50 md:py-10"
         >
-          <div class="flex flex-col md:flex-row items-center gap-6">
-            <img
-              src="assets/images/uswah-profile.avif"
-              alt="Uswah Saeed"
-              class="w-52 h-52 rounded-full border-4 border-gray-700 object-cover"
-            />
-            <div class="flex-1 text-lg space-y-4 text-xl">
-              I'm <span class="font-bold"> Uswah Saeed</span>, a student of
-              <span class="font-bold">game design </span> with a background in
-              computer science and professional experience in illustration, user
-              experience, and game development. My journey into game development
-              stems from my love of colors, shapes, and motion. I have been
-              recently drawn to develop games for children that target areas
-              where outdoor play is restricted because of social, security, or
-              weather factors. My goal is to create games that promote exercise
-              and enable everyone to participate. I want to expand my global
-              exposure and contribute to the gaming industry while pursuing my
-              studies in Games Design.
+          <!-- Bio Section -->
+          <div
+            class="max-w-6xl mx-auto px-4 flex justify-center items-center flex-1"
+          >
+            <div class="flex flex-col md:flex-row items-center gap-6">
+              <img
+                src="assets/images/uswah-profile.avif"
+                alt="Uswah Saeed"
+                class="w-52 h-52 rounded-full border-4 border-gray-700 object-cover"
+              />
+              <div class="flex-1 text-lg space-y-4 text-xl">
+                I'm <span class="font-bold"> Uswah Saeed</span>, a student of
+                <span class="font-bold">game design </span> with a background in
+                computer science and professional experience in illustration,
+                user experience, and game development. My journey into game
+                development stems from my love of colors, shapes, and motion. I
+                have been recently drawn to develop games for children that
+                target areas where outdoor play is restricted because of social,
+                security, or weather factors. My goal is to create games that
+                promote exercise and enable everyone to participate. I want to
+                expand my global exposure and contribute to the gaming industry
+                while pursuing my studies in Games Design.
+              </div>
+            </div>
+          </div>
+
+          <!-- Marquee Section (always at bottom of hero) -->
+          <div class="w-full md:max-w-6xl mx-auto px-4 py-4 overflow-hidden">
+            <h2 class="text-3xl font-bold mb-2 text-center">
+              My fields of Interest
+            </h2>
+
+            <div class="relative w-full overflow-hidden text-xl">
+              <div class="flex whitespace-nowrap animate-marquee text-xl">
+                <span class="mx-4 text-accent-blue">• Education</span>
+                <span class="mx-4 text-accent-green">• Game Design</span>
+                <span class="mx-4 text-accent-orange">• Game Development</span>
+                <span class="mx-4 text-accent-red"
+                  >• Illustration & Animation</span
+                >
+                <span class="mx-4 text-accent-blue">• UI/UX Design</span>
+                <span class="mx-4 text-accent-green">• Voluntering</span>
+                <span class="mx-4 text-accent-orange"
+                  >• GeospatialVisualization</span
+                >
+                <span class="mx-4 text-accent-red">• Case Studies</span>
+
+                <!-- duplicate for infinite loop -->
+                <span class="mx-4 text-accent-blue">• Education</span>
+                <span class="mx-4 text-accent-green">• Game Design</span>
+                <span class="mx-4 text-accent-orange">• Game Development</span>
+                <span class="mx-4 text-accent-red"
+                  >• Illustration & Animation</span
+                >
+                <span class="mx-4 text-accent-blue">• UI/UX Design</span>
+                <span class="mx-4 text-accent-green">• Voluntering</span>
+                <span class="mx-4 text-accent-orange"
+                  >• GeospatialVisualization</span
+                >
+                <span class="mx-4 text-accent-red">• Design</span>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Marquee Section (always at bottom of hero) -->
-        <div class="w-full md:max-w-6xl mx-auto px-4 py-4 overflow-hidden">
-          <h2 class="text-3xl font-bold mb-2 text-center">
-            My fields of Interest
+        <!-- Featured Projects -->
+        <div class="max-w-6xl mx-auto px-4 py-8">
+          <h2 class="text-2xl font-bold mb-8 text-center">
+            <span class="text-yellow-900">★</span> Featured Projects
           </h2>
 
-          <div class="relative w-full overflow-hidden text-xl">
-            <div class="flex whitespace-nowrap animate-marquee text-xl">
-              <span class="mx-4 text-accent-blue">• Videogames</span>
-              <span class="mx-4 text-accent-green">• RapidPrototyping</span>
-              <span class="mx-4 text-accent-orange">• GameArt</span>
-              <span class="mx-4 text-accent-red">• UX</span>
-              <span class="mx-4 text-accent-blue">• GenerativeArt</span>
-              <span class="mx-4 text-accent-green">• Navigation</span>
-              <span class="mx-4 text-accent-orange"
-                >• GeospatialVisualization</span
-              >
-              <span class="mx-4 text-accent-red">• Design</span>
-
-              <!-- duplicate for infinite loop -->
-              <span class="mx-4 text-accent-blue">• Videogames</span>
-              <span class="mx-4 text-accent-green">• RapidPrototyping</span>
-              <span class="mx-4 text-accent-orange">• GameArt</span>
-              <span class="mx-4 text-accent-red">• UX</span>
-              <span class="mx-4 text-accent-blue">• GenerativeArt</span>
-              <span class="mx-4 text-accent-green">• Navigation</span>
-              <span class="mx-4 text-accent-orange"
-                >• GeospatialVisualization</span
-              >
-              <span class="mx-4 text-accent-red">• Design</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Featured Projects -->
-      <div class="max-w-6xl mx-auto px-4 py-8">
-        <h2 class="text-2xl font-bold mb-8 text-center">
-          <span class="text-yellow-900">★</span> Featured Projects
-        </h2>
-
-        <div class="w-full portfolio-item filter-app flex flex-col gap-5">
-          <div
-            class="flex flex-col md:flex-row bg-cover bg-center p-5 rounded-lg"
-            style="background-image: url('assets/images/screenshots/tob.png')"
-          >
-            <!-- Left section: GIF + screenshots -->
-            <div class="md:w-1/3 flex flex-col items-center">
-              <img
-                class="w-full max-w-xs rounded-lg"
-                src="assets/images/projects/thought.gif"
-                alt="Thoughts Out!"
-              />
-              <div class="flex flex-wrap justify-center gap-2 mt-4 w-full">
-                <img
-                  src="assets/images/projects/thought.png"
-                  class="h-20 w-36 object-cover rounded-md"
-                />
-                <img
-                  src="assets/images/screenshots/to1.png"
-                  class="h-20 w-36 object-cover rounded-md"
-                />
-                <img
-                  src="assets/images/screenshots/to2.png"
-                  class="h-20 w-36 object-cover rounded-md"
-                />
-                <img
-                  src="assets/images/screenshots/to4.png"
-                  class="h-20 w-36 object-cover rounded-md"
-                />
-              </div>
-            </div>
-
-            <!-- Right section: Content -->
-            <div class="md:w-2/3 md:pl-6 mt-6 md:mt-0 text-white">
-              <p>
-                <a
-                  class="font-bold text-3xl projectheader hover:underline"
-                  href="https://ssssand.itch.io/thoughts-out"
-                  target="_blank"
-                >
-                  Thoughts Out!
-                </a>
-                <span class="ml-2">2024</span>
-              </p>
-
-              <div class="descriptionFeatured mt-2 space-y-3">
-                <p>
-                  Thoughts Out! is set in a dreamlike world where your everyday
-                  office troubles morph into an annoying dragon. This dragon can
-                  alter the surrounding environment, making your adventure
-                  either easier or more challenging. How can you drive it out of
-                  your daydream and reclaim your peace of mind?
-                </p>
-
-                <p><strong>Genre:</strong> Puzzle, Platformer</p>
-                <p><strong>Role:</strong> Programmer, Level Designer</p>
-                <p>
-                  <strong>Contributions:</strong> Gameplay, UI Programming,
-                  Dialogue System, Game Design
-                </p>
-
-                <p class="text-cyan-400">Made with Unreal Engine 5.3</p>
-
-                <div class="flex items-center flex-wrap gap-2">
-                  <span class="border border-white text-xs px-2 py-1 rounded-md"
-                    >Game Project 2 at Aalto</span
-                  >
-                  <span class="border border-white text-xs px-2 py-1 rounded-md"
-                    >PC</span
-                  >
-                  <span class="border border-white text-xs px-2 py-1 rounded-md"
-                    >9 People</span
-                  >
-
-                  <a
-                    href="https://ssssand.itch.io/thoughts-out"
-                    target="_blank"
-                    class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md text-sm font-medium"
-                  >
-                    Itch.io
-                  </a>
-                  <a
-                    href="https://www.youtube.com/embed/owJ9X8U2Ads"
-                    target="_blank"
-                    class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md text-sm font-medium"
-                  >
-                    Trailer
-                  </a>
-                  <img
-                    class="engineLogo"
-                    src="assets/images/unreal.png"
-                    width="50"
-                    height="50"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="flex flex-col md:flex-row bg-cover bg-center p-5 rounded-lg"
-            style="background-image: url('assets/images/screenshots/tob.png')"
-          >
-            <!-- Left section: GIF + screenshots -->
-            <div class="md:w-1/3 flex flex-col items-center">
-              <img
-                class="activegif w-full max-w-xs rounded-lg"
-                src="assets/images/projects/bark.jpg"
-                alt="Thoughts Out!"
-              />
-              <div class="flex flex-wrap justify-center gap-2 mt-4">
-                <img
-                  src="assets/images/screenshots/bark1.png"
-                  class="h-20 w-36 object-cover rounded-md"
-                />
-                <img
-                  src="assets/images/screenshots/bark2.png"
-                  class="h-20 w-36 object-cover rounded-md"
-                />
-                <img
-                  src="assets/images/screenshots/bark3.png"
-                  class="h-20 w-36 object-cover rounded-md"
-                />
-                <img
-                  src="assets/images/screenshots/bark4.png"
-                  class="h-20 w-36 object-cover rounded-md"
-                />
-              </div>
-            </div>
-
-            <!-- Right section: Content -->
-            <div class="md:w-2/3 md:pl-6 mt-6 md:mt-0 text-white">
-              <p>
-                <a
-                  class="font-bold text-3xl projectheader hover:underline"
-                  href="https://ssssand.itch.io/thoughts-out"
-                  target="_blank"
-                >
-                  Bark No More
-                </a>
-                <span class="ml-2">2025</span>
-              </p>
-
-              <div class="descriptionFeatured mt-2 space-y-3">
-                <p>
-                  Bark no More is a mixed reality (MR) tower defense game that
-                  reimagines your everyday surroundings as an interactive
-                  battlefield. By leveraging spatial mapping and depth sensing,
-                  the game blends virtual elements with the physical world. The
-                  core gameplay centers on intuitive, embodied interaction.
-                  Players use natural hand gestures to collect energy dropped by
-                  defeated enemies or to hammer down and upgrade towers in
-                  real-time. These physical motions replace traditional
-                  controller-based inputs, creating a seamless bridge between
-                  the player's body and the game world.
-                </p>
-
-                <p><strong>Genre:</strong> Tower Defense</p>
-                <p><strong>Role:</strong> Programmer, Game Designer</p>
-                <p>
-                  <strong>Contributions:</strong> Gameplay, Game Design, Hand
-                  Tracking, Gesture Recognition
-                </p>
-
-                <p class="text-cyan-400">Made with Unreal Engine 5.3</p>
-
-                <div class="flex items-center flex-wrap gap-2">
-                  <span class="border border-white text-xs px-2 py-1 rounded-md"
-                    >Embodied Interaction</span
-                  >
-                  <span class="border border-white text-xs px-2 py-1 rounded-md"
-                    >MR</span
-                  >
-                  <span class="border border-white text-xs px-2 py-1 rounded-md"
-                    >2 People</span
-                  >
-
-                  <a
-                    href="https://shamitahmed.itch.io/barknomore"
-                    target="_blank"
-                    class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md text-sm font-medium"
-                  >
-                    Itch.io
-                  </a>
-                  <a
-                    href="https://www.youtube.com/watch?v=-lfP-QiiHZw"
-                    target="_blank"
-                    class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md text-sm font-medium"
-                  >
-                    Gameplay
-                  </a>
-                  <img
-                    class="engineLogo"
-                    src="assets/images/unity.png"
-                    width="50"
-                    height="50"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="relative flex flex-col md:flex-row bg-cover bg-center p-5 rounded-lg"
-            style="background-image: url('assets/images/screenshots/mcb.jpg')"
-          >
-            <!-- Overlay for readability -->
-            <div class="absolute inset-0 bg-black/50 rounded-lg"></div>
-
-            <div class="relative flex flex-col md:flex-row w-full">
+          <div class="w-full portfolio-item filter-app flex flex-col gap-5">
+            <div
+              class="flex flex-col md:flex-row bg-cover bg-center p-5 rounded-lg"
+              style="background-image: url('assets/images/screenshots/tob.png')"
+            >
               <!-- Left section: GIF + screenshots -->
               <div class="md:w-1/3 flex flex-col items-center">
                 <img
-                  class="activegif w-full max-w-xs rounded-lg"
-                  src="assets/images/projects/monster.gif"
-                  alt="Monster Cleaning Inc."
+                  class="w-full max-w-xs rounded-lg"
+                  src="assets/images/projects/thought.gif"
+                  alt="Thoughts Out!"
                 />
-                <div class="flex flex-wrap justify-center gap-2 mt-4">
+                <div class="flex flex-wrap justify-center gap-2 mt-4 w-full">
                   <img
-                    src="assets/images/screenshots/mc3.png"
+                    src="assets/images/projects/thought.png"
                     class="h-20 w-36 object-cover rounded-md"
                   />
                   <img
-                    src="assets/images/screenshots/mc4.png"
+                    src="assets/images/screenshots/to1.png"
                     class="h-20 w-36 object-cover rounded-md"
                   />
                   <img
-                    src="assets/images/screenshots/mc1.png"
+                    src="assets/images/screenshots/to2.png"
                     class="h-20 w-36 object-cover rounded-md"
                   />
                   <img
-                    src="assets/images/screenshots/mc2.png"
+                    src="assets/images/screenshots/to4.png"
                     class="h-20 w-36 object-cover rounded-md"
                   />
                 </div>
@@ -471,196 +468,410 @@
                 <p>
                   <a
                     class="font-bold text-3xl projectheader hover:underline"
-                    href="https://shamitahmed.itch.io/monstercleaninginc"
+                    href="https://ssssand.itch.io/thoughts-out"
                     target="_blank"
                   >
-                    Monster Cleaning Inc.
+                    Thoughts Out!
                   </a>
                   <span class="ml-2">2024</span>
                 </p>
 
                 <div class="descriptionFeatured mt-2 space-y-3">
                   <p>
-                    Welcome to Monster Cleaning Inc., located in the heart of an
-                    RPG world! After nasty battles, these monsters need a good
-                    scrub. You need to use the right-sized sponge to clean them.
-                    Your cleaning skills will be judged by the monsters
-                    themselves, and their ratings will determine your success.
+                    Thoughts Out! is set in a dreamlike world where your
+                    everyday office troubles morph into an annoying dragon. This
+                    dragon can alter the surrounding environment, making your
+                    adventure either easier or more challenging. How can you
+                    drive it out of your daydream and reclaim your peace of
+                    mind?
                   </p>
 
-                  <p><strong>Genre:</strong> Survival, Clicker</p>
-                  <p><strong>Role:</strong> Programmer, Game Designer</p>
+                  <p><strong>Genre:</strong> Puzzle, Platformer</p>
+                  <p><strong>Role:</strong> Programmer, Level Designer</p>
                   <p>
-                    <strong>Contributions:</strong> Gameplay, UI Programming
+                    <strong>Contributions:</strong> Gameplay, UI Programming,
+                    Dialogue System, Game Design
                   </p>
 
-                  <p class="text-green-400">Rank: Style #54, Overall #358</p>
+                  <p class="text-cyan-400">Made with Unreal Engine 5.3</p>
 
-                  <!-- Tags + Buttons -->
                   <div class="flex items-center flex-wrap gap-2">
                     <span
                       class="border border-white text-xs px-2 py-1 rounded-md"
+                      >Game Project 2 at Aalto</span
                     >
-                      GMTK Game Jam 2024
-                    </span>
                     <span
                       class="border border-white text-xs px-2 py-1 rounded-md"
+                      >PC</span
                     >
-                      Web
-                    </span>
                     <span
                       class="border border-white text-xs px-2 py-1 rounded-md"
+                      >9 People</span
                     >
-                      5 People
-                    </span>
 
                     <a
-                      href="https://shamitahmed.itch.io/monstercleaninginc"
+                      href="https://ssssand.itch.io/thoughts-out"
                       target="_blank"
                       class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md text-sm font-medium"
                     >
                       Itch.io
                     </a>
                     <a
-                      href="https://youtu.be/HJiKrLy1yiQ"
+                      href="https://www.youtube.com/embed/owJ9X8U2Ads"
                       target="_blank"
                       class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md text-sm font-medium"
                     >
                       Trailer
                     </a>
+                    <img
+                      class="engineLogo"
+                      src="assets/images/unreal.png"
+                      width="50"
+                      height="50"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col md:flex-row bg-cover bg-center p-5 rounded-lg"
+              style="background-image: url('assets/images/screenshots/tob.png')"
+            >
+              <!-- Left section: GIF + screenshots -->
+              <div class="md:w-1/3 flex flex-col items-center">
+                <img
+                  class="activegif w-full max-w-xs rounded-lg"
+                  src="assets/images/projects/bark.jpg"
+                  alt="Thoughts Out!"
+                />
+                <div class="flex flex-wrap justify-center gap-2 mt-4">
+                  <img
+                    src="assets/images/screenshots/bark1.png"
+                    class="h-20 w-36 object-cover rounded-md"
+                  />
+                  <img
+                    src="assets/images/screenshots/bark2.png"
+                    class="h-20 w-36 object-cover rounded-md"
+                  />
+                  <img
+                    src="assets/images/screenshots/bark3.png"
+                    class="h-20 w-36 object-cover rounded-md"
+                  />
+                  <img
+                    src="assets/images/screenshots/bark4.png"
+                    class="h-20 w-36 object-cover rounded-md"
+                  />
+                </div>
+              </div>
+
+              <!-- Right section: Content -->
+              <div class="md:w-2/3 md:pl-6 mt-6 md:mt-0 text-white">
+                <p>
+                  <a
+                    class="font-bold text-3xl projectheader hover:underline"
+                    href="https://ssssand.itch.io/thoughts-out"
+                    target="_blank"
+                  >
+                    Bark No More
+                  </a>
+                  <span class="ml-2">2025</span>
+                </p>
+
+                <div class="descriptionFeatured mt-2 space-y-3">
+                  <p>
+                    Bark no More is a mixed reality (MR) tower defense game that
+                    reimagines your everyday surroundings as an interactive
+                    battlefield. By leveraging spatial mapping and depth
+                    sensing, the game blends virtual elements with the physical
+                    world. The core gameplay centers on intuitive, embodied
+                    interaction. Players use natural hand gestures to collect
+                    energy dropped by defeated enemies or to hammer down and
+                    upgrade towers in real-time. These physical motions replace
+                    traditional controller-based inputs, creating a seamless
+                    bridge between the player's body and the game world.
+                  </p>
+
+                  <p><strong>Genre:</strong> Tower Defense</p>
+                  <p><strong>Role:</strong> Programmer, Game Designer</p>
+                  <p>
+                    <strong>Contributions:</strong> Gameplay, Game Design, Hand
+                    Tracking, Gesture Recognition
+                  </p>
+
+                  <p class="text-cyan-400">Made with Unreal Engine 5.3</p>
+
+                  <div class="flex items-center flex-wrap gap-2">
+                    <span
+                      class="border border-white text-xs px-2 py-1 rounded-md"
+                      >Embodied Interaction</span
+                    >
+                    <span
+                      class="border border-white text-xs px-2 py-1 rounded-md"
+                      >MR</span
+                    >
+                    <span
+                      class="border border-white text-xs px-2 py-1 rounded-md"
+                      >2 People</span
+                    >
+
                     <a
-                      href="https://www.youtube.com/watch?v=LKyk2vuDwnc"
+                      href="https://shamitahmed.itch.io/barknomore"
+                      target="_blank"
+                      class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md text-sm font-medium"
+                    >
+                      Itch.io
+                    </a>
+                    <a
+                      href="https://www.youtube.com/watch?v=-lfP-QiiHZw"
                       target="_blank"
                       class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md text-sm font-medium"
                     >
                       Gameplay
                     </a>
+                    <img
+                      class="engineLogo"
+                      src="assets/images/unity.png"
+                      width="50"
+                      height="50"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
 
-                    <div class="flex gap-2 items-center">
-                      <img
-                        class="engineLogo"
-                        src="assets/images/unity.png"
-                        width="50"
-                        height="50"
-                      />
+            <div
+              class="relative flex flex-col md:flex-row bg-cover bg-center p-5 rounded-lg"
+              style="background-image: url('assets/images/screenshots/mcb.jpg')"
+            >
+              <!-- Overlay for readability -->
+              <div class="absolute inset-0 bg-black/50 rounded-lg"></div>
+
+              <div class="relative flex flex-col md:flex-row w-full">
+                <!-- Left section: GIF + screenshots -->
+                <div class="md:w-1/3 flex flex-col items-center">
+                  <img
+                    class="activegif w-full max-w-xs rounded-lg"
+                    src="assets/images/projects/monster.gif"
+                    alt="Monster Cleaning Inc."
+                  />
+                  <div class="flex flex-wrap justify-center gap-2 mt-4">
+                    <img
+                      src="assets/images/screenshots/mc3.png"
+                      class="h-20 w-36 object-cover rounded-md"
+                    />
+                    <img
+                      src="assets/images/screenshots/mc4.png"
+                      class="h-20 w-36 object-cover rounded-md"
+                    />
+                    <img
+                      src="assets/images/screenshots/mc1.png"
+                      class="h-20 w-36 object-cover rounded-md"
+                    />
+                    <img
+                      src="assets/images/screenshots/mc2.png"
+                      class="h-20 w-36 object-cover rounded-md"
+                    />
+                  </div>
+                </div>
+
+                <!-- Right section: Content -->
+                <div class="md:w-2/3 md:pl-6 mt-6 md:mt-0 text-white">
+                  <p>
+                    <a
+                      class="font-bold text-3xl projectheader hover:underline"
+                      href="https://shamitahmed.itch.io/monstercleaninginc"
+                      target="_blank"
+                    >
+                      Monster Cleaning Inc.
+                    </a>
+                    <span class="ml-2">2024</span>
+                  </p>
+
+                  <div class="descriptionFeatured mt-2 space-y-3">
+                    <p>
+                      Welcome to Monster Cleaning Inc., located in the heart of
+                      an RPG world! After nasty battles, these monsters need a
+                      good scrub. You need to use the right-sized sponge to
+                      clean them. Your cleaning skills will be judged by the
+                      monsters themselves, and their ratings will determine your
+                      success.
+                    </p>
+
+                    <p><strong>Genre:</strong> Survival, Clicker</p>
+                    <p><strong>Role:</strong> Programmer, Game Designer</p>
+                    <p>
+                      <strong>Contributions:</strong> Gameplay, UI Programming
+                    </p>
+
+                    <p class="text-green-400">Rank: Style #54, Overall #358</p>
+
+                    <!-- Tags + Buttons -->
+                    <div class="flex items-center flex-wrap gap-2">
+                      <span
+                        class="border border-white text-xs px-2 py-1 rounded-md"
+                      >
+                        GMTK Game Jam 2024
+                      </span>
+                      <span
+                        class="border border-white text-xs px-2 py-1 rounded-md"
+                      >
+                        Web
+                      </span>
+                      <span
+                        class="border border-white text-xs px-2 py-1 rounded-md"
+                      >
+                        5 People
+                      </span>
+
+                      <a
+                        href="https://shamitahmed.itch.io/monstercleaninginc"
+                        target="_blank"
+                        class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md text-sm font-medium"
+                      >
+                        Itch.io
+                      </a>
+                      <a
+                        href="https://youtu.be/HJiKrLy1yiQ"
+                        target="_blank"
+                        class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md text-sm font-medium"
+                      >
+                        Trailer
+                      </a>
+                      <a
+                        href="https://www.youtube.com/watch?v=LKyk2vuDwnc"
+                        target="_blank"
+                        class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md text-sm font-medium"
+                      >
+                        Gameplay
+                      </a>
+
+                      <div class="flex gap-2 items-center">
+                        <img
+                          class="engineLogo"
+                          src="assets/images/unity.png"
+                          width="50"
+                          height="50"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div
-            class="relative flex flex-col md:flex-row bg-cover bg-center p-5 rounded-lg"
-            style="background-image: url('assets/images/screenshots/mcb.jpg')"
-          >
-            <!-- Overlay for readability -->
-            <div class="absolute inset-0 bg-black/50 rounded-lg"></div>
+            <div
+              class="relative flex flex-col md:flex-row bg-cover bg-center p-5 rounded-lg"
+              style="background-image: url('assets/images/screenshots/mcb.jpg')"
+            >
+              <!-- Overlay for readability -->
+              <div class="absolute inset-0 bg-black/50 rounded-lg"></div>
 
-            <div class="relative flex flex-col md:flex-row w-full">
-              <!-- Left section: GIF + screenshots -->
-              <div class="md:w-1/3 flex flex-col items-center">
-                <img
-                  class="h-[170px] w-full max-w-xs rounded-lg"
-                  src="assets/images/projects/unreality.gif"
-                  alt="Monster Cleaning Inc."
-                />
-                <div class="flex flex-wrap justify-center gap-2 mt-4">
+              <div class="relative flex flex-col md:flex-row w-full">
+                <!-- Left section: GIF + screenshots -->
+                <div class="md:w-1/3 flex flex-col items-center">
                   <img
-                    src="assets/images/screenshots/un1.png"
-                    class="h-20 w-36 object-cover rounded-md"
+                    class="h-[170px] w-full max-w-xs rounded-lg"
+                    src="assets/images/projects/unreality.gif"
+                    alt="Monster Cleaning Inc."
                   />
-                  <img
-                    src="assets/images/screenshots/un2.png"
-                    class="h-20 w-36 object-cover rounded-md"
-                  />
-                  <img
-                    src="assets/images/screenshots/un3.png"
-                    class="h-20 w-36 object-cover rounded-md"
-                  />
-                  <img
-                    src="assets/images/screenshots/un4.png"
-                    class="h-20 w-36 object-cover rounded-md"
-                  />
+                  <div class="flex flex-wrap justify-center gap-2 mt-4">
+                    <img
+                      src="assets/images/screenshots/un1.png"
+                      class="h-20 w-36 object-cover rounded-md"
+                    />
+                    <img
+                      src="assets/images/screenshots/un2.png"
+                      class="h-20 w-36 object-cover rounded-md"
+                    />
+                    <img
+                      src="assets/images/screenshots/un3.png"
+                      class="h-20 w-36 object-cover rounded-md"
+                    />
+                    <img
+                      src="assets/images/screenshots/un4.png"
+                      class="h-20 w-36 object-cover rounded-md"
+                    />
+                  </div>
                 </div>
-              </div>
 
-              <!-- Right section: Content -->
-              <div class="md:w-2/3 md:pl-6 mt-6 md:mt-0 text-white">
-                <p>
-                  <a
-                    class="font-bold text-3xl projectheader hover:underline"
-                    href="https://shamitahmed.itch.io/monstercleaninginc"
-                    target="_blank"
-                  >
-                    (Un)Reality VR
-                  </a>
-                  <span class="ml-2">2024</span>
-                </p>
-
-                <div class="descriptionFeatured mt-2 space-y-3">
+                <!-- Right section: Content -->
+                <div class="md:w-2/3 md:pl-6 mt-6 md:mt-0 text-white">
                   <p>
-                    Unreality is a VR experience exploring the boundary between
-                    real and virtual spaces, evoking distinct emotions through
-                    interactive environments. Using geospatial 3D data and
-                    hand-crafted worlds, we designed four areas that elicit
-                    relaxation, anxiety, joy, and nostalgia. The project blends
-                    architecture and game design to challenge perceptions of
-                    reality.
+                    <a
+                      class="font-bold text-3xl projectheader hover:underline"
+                      href="https://shamitahmed.itch.io/monstercleaninginc"
+                      target="_blank"
+                    >
+                      (Un)Reality VR
+                    </a>
+                    <span class="ml-2">2024</span>
                   </p>
 
-                  <p><strong>Genre:</strong> Walking Simulator, Adventure</p>
-                  <p><strong>Role:</strong> Programmer, Game Designer</p>
-                  <p>
-                    <strong>Contributions:</strong> Gameplay, UI Programming,
-                    Lighting, Post-Processing, Game Design, Production
-                    Management
-                  </p>
+                  <div class="descriptionFeatured mt-2 space-y-3">
+                    <p>
+                      Unreality is a VR experience exploring the boundary
+                      between real and virtual spaces, evoking distinct emotions
+                      through interactive environments. Using geospatial 3D data
+                      and hand-crafted worlds, we designed four areas that
+                      elicit relaxation, anxiety, joy, and nostalgia. The
+                      project blends architecture and game design to challenge
+                      perceptions of reality.
+                    </p>
 
-                  <!-- <p class="text-green-400">
+                    <p><strong>Genre:</strong> Walking Simulator, Adventure</p>
+                    <p><strong>Role:</strong> Programmer, Game Designer</p>
+                    <p>
+                      <strong>Contributions:</strong> Gameplay, UI Programming,
+                      Lighting, Post-Processing, Game Design, Production
+                      Management
+                    </p>
+
+                    <!-- <p class="text-green-400">
                 Rank: Style #54, Overall #358
               </p> -->
 
-                  <!-- Tags + Buttons -->
-                  <div class="flex items-center flex-wrap gap-2">
-                    <span
-                      class="border border-white text-xs px-2 py-1 rounded-md"
-                    >
-                      Designing Virtual Worlds
-                    </span>
-                    <span
-                      class="border border-white text-xs px-2 py-1 rounded-md"
-                    >
-                      VR
-                    </span>
-                    <span
-                      class="border border-white text-xs px-2 py-1 rounded-md"
-                    >
-                      4 People
-                    </span>
+                    <!-- Tags + Buttons -->
+                    <div class="flex items-center flex-wrap gap-2">
+                      <span
+                        class="border border-white text-xs px-2 py-1 rounded-md"
+                      >
+                        Designing Virtual Worlds
+                      </span>
+                      <span
+                        class="border border-white text-xs px-2 py-1 rounded-md"
+                      >
+                        VR
+                      </span>
+                      <span
+                        class="border border-white text-xs px-2 py-1 rounded-md"
+                      >
+                        4 People
+                      </span>
 
-                    <a
-                      href="https://shamitahmed.itch.io/unreality"
-                      target="_blank"
-                      class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md text-sm font-medium"
-                    >
-                      Itch.io
-                    </a>
-                    <a
-                      href="https://youtu.be/1k7vV8V_ejE"
-                      target="_blank"
-                      class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md text-sm font-medium"
-                    >
-                      Trailer
-                    </a>
+                      <a
+                        href="https://shamitahmed.itch.io/unreality"
+                        target="_blank"
+                        class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md text-sm font-medium"
+                      >
+                        Itch.io
+                      </a>
+                      <a
+                        href="https://youtu.be/1k7vV8V_ejE"
+                        target="_blank"
+                        class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md text-sm font-medium"
+                      >
+                        Trailer
+                      </a>
 
-                    <div class="flex gap-2 items-center">
-                      <img
-                        class="engineLogo"
-                        src="assets/images/unity.png"
-                        width="50"
-                        height="50"
-                      />
+                      <div class="flex gap-2 items-center">
+                        <img
+                          class="engineLogo"
+                          src="assets/images/unity.png"
+                          width="50"
+                          height="50"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -668,1373 +879,975 @@
             </div>
           </div>
         </div>
-      </div>
 
-      <main class="mx-auto">
-        <!-- Education Section -->
-        <section id="education" class="bg-gray-50 text-gray-900 py-16 mt-32">
-          <div class="container mx-auto px-6">
-            <!-- Section Header -->
-            <h2 class="text-3xl font-bold mb-12 flex items-center">
-              🎓 Education
-            </h2>
+        <main class="mx-auto">
+          <!-- Education Section -->
+          <section id="education" class="bg-gray-50 text-gray-900 py-16 mt-32">
+            <div class="container mx-auto px-6">
+              <!-- Section Header -->
+              <h2 class="text-3xl font-bold mb-12 flex items-center">
+                🎓 Education
+              </h2>
 
-            <!-- Horizontal Timeline -->
-            <div
-              class="relative flex items-start justify-between border-t-4 border-gray-300"
-            >
-              <!-- Aalto University (below line) -->
-              <div class="w-1/3 text-center px-4">
-                <div class="flex justify-center -mt-3">
-                  <span
-                    class="w-6 h-6 rounded-full bg-yellow-500 border-4 border-gray-50"
-                  ></span>
+              <!-- Horizontal Timeline -->
+              <div
+                class="relative flex items-start justify-between border-t-4 border-gray-300"
+              >
+                <!-- university of engineering and technology (below line) -->
+                <div class="w-full text-center px-4">
+                  <div class="flex justify-center -mt-3">
+                    <span
+                      class="w-6 h-6 rounded-full bg-yellow-500 border-4 border-gray-50"
+                    ></span>
+                  </div>
+                  <div class="mt-6">
+                    <img
+                      src="assets/images/University_of_Engineering_and_Technology_Lahore_logo.svg.png"
+                      alt="Aalto University"
+                      class="w-14 h-14 mx-auto mb-3 object-contain"
+                    />
+                    <h3 class="text-lg font-semibold">University of engineering and technology</h3>
+                    <p class="text-sm">
+                      Bachelor of Sceince in Computer Science
+                    </p>
+                    <p class="text-sm">
+                      CGPA : 3.45
+                    </p>
+                    
+                    <p class="text-xs text-gray-500">2019 – 2023</p>
+                  </div>
                 </div>
-                <div class="mt-6">
-                  <img
-                    src="assets/images/aalto.png"
-                    alt="Aalto University"
-                    class="w-14 h-14 mx-auto mb-3 object-contain"
-                  />
-                  <h3 class="text-lg font-semibold">Aalto University</h3>
-                  <p class="text-sm">MSc in CCIS – Game Design & Development</p>
-                  <p class="text-xs text-gray-500">2023 – Present</p>
-                </div>
+
+                <!-- AUST (above line) -->
+                <!-- <div class="w-1/3 text-center px-4 relative">
+                  <div class="flex justify-center -mt-3">
+                    <span
+                      class="w-6 h-6 rounded-full bg-yellow-500 border-4 border-gray-50"
+                    ></span>
+                  </div>
+                  <div
+                    class="mb-6 absolute bottom-full left-1/2 -translate-x-1/2"
+                  >
+                    <img
+                      src="assets/images/aust.png"
+                      alt="AUST"
+                      class="w-14 h-14 mx-auto mb-3 object-contain"
+                    />
+                    <h3 class="text-lg font-semibold">AUST</h3>
+                    <p class="text-sm">BSc in Computer Science & Engineering</p>
+                    <p class="text-xs text-gray-500">2015 – 2019</p>
+                  </div>
+                </div> -->
+
+                <!-- Dhaka Residential (below line) -->
+                <!-- <div class="w-1/3 text-center px-4">
+                  <div class="flex justify-center -mt-3">
+                    <span
+                      class="w-6 h-6 rounded-full bg-yellow-500 border-4 border-gray-50"
+                    ></span>
+                  </div>
+                  <div class="mt-6">
+                    <img
+                      src="assets/images/drmc.png"
+                      alt="Dhaka Residential"
+                      class="w-14 h-14 mx-auto mb-3 object-contain"
+                    />
+                    <h3 class="text-lg font-semibold">Dhaka Residential</h3>
+                    <p class="text-sm">SSC & HSC</p>
+                    <p class="text-xs text-gray-500">2004 – 2014</p>
+                  </div>
+                </div> -->
               </div>
+            </div>
+          </section>
+        </main>
 
-              <!-- AUST (above line) -->
-              <div class="w-1/3 text-center px-4 relative">
-                <div class="flex justify-center -mt-3">
-                  <span
-                    class="w-6 h-6 rounded-full bg-yellow-500 border-4 border-gray-50"
-                  ></span>
-                </div>
+        <main
+          class="flex flex-wrap justify-center items-center md:items-start md:justify-between lg:max-w-[90%] mx-auto"
+        >
+          <!-- Experience Section  -->
+          <section id="experience" class="bg-gray-50 text-gray-900 py-16 mt-32">
+            <div class="container mx-auto px-6">
+              <!-- Section Header -->
+              <h2
+                class="text-3xl font-bold mb-12 flex items-center text-center"
+              >
+                💼 Work Experience
+              </h2>
+
+              <!-- Timeline Wrapper -->
+              <div class="relative">
+                <!-- Vertical Line -->
                 <div
-                  class="mb-6 absolute bottom-full left-1/2 -translate-x-1/2"
-                >
-                  <img
-                    src="assets/images/aust.png"
-                    alt="AUST"
-                    class="w-14 h-14 mx-auto mb-3 object-contain"
-                  />
-                  <h3 class="text-lg font-semibold">AUST</h3>
-                  <p class="text-sm">BSc in Computer Science & Engineering</p>
-                  <p class="text-xs text-gray-500">2015 – 2019</p>
-                </div>
-              </div>
+                  class="absolute left-1/2 transform -translate-x-1/2 h-full border-l-4 border-gray-300"
+                ></div>
 
-              <!-- Dhaka Residential (below line) -->
-              <div class="w-1/3 text-center px-4">
-                <div class="flex justify-center -mt-3">
-                  <span
-                    class="w-6 h-6 rounded-full bg-yellow-500 border-4 border-gray-50"
-                  ></span>
+                <!-- Item 1 (Left) -->
+                <div class="mb-16 flex justify-start w-full">
+                  <div class="w-1/2 pr-8 text-right">
+                    <img
+                      src="assets/images/aalto.png"
+                      alt="Aalto University"
+                      class="w-14 h-14 ml-auto mb-3 object-contain"
+                    />
+                    <h3 class="text-lg font-semibold">Research Assistant</h3>
+                    <span class="text-xs text-gray-500"
+                      >Jun 2024 – Present</span
+                    >
+
+                    <h3 class="text-lg font-semibold mt-2">Student Tutor</h3>
+                    <span class="text-xs text-gray-500"
+                      >Mar 2024 – Dec 2024</span
+                    >
+
+                    <p class="text-sm mt-2">Aalto University</p>
+                  </div>
+                  <div class="w-1/2 relative">
+                    <div
+                      class="absolute -left-3 top-6 w-6 h-6 rounded-full bg-yellow-500 border-4 border-gray-50"
+                    ></div>
+                  </div>
                 </div>
-                <div class="mt-6">
-                  <img
-                    src="assets/images/drmc.png"
-                    alt="Dhaka Residential"
-                    class="w-14 h-14 mx-auto mb-3 object-contain"
-                  />
-                  <h3 class="text-lg font-semibold">Dhaka Residential</h3>
-                  <p class="text-sm">SSC & HSC</p>
-                  <p class="text-xs text-gray-500">2004 – 2014</p>
+
+                <!-- Item 2 (Right) -->
+                <div class="mb-16 flex justify-end w-full">
+                  <div class="w-1/2 relative">
+                    <div
+                      class="absolute -right-3 top-6 w-6 h-6 rounded-full bg-yellow-500 border-4 border-gray-50"
+                    ></div>
+                  </div>
+                  <div class="w-1/2 pl-8 text-left">
+                    <img
+                      src="assets/images/playense.png"
+                      alt="Playense"
+                      class="bg-black px-2 w-14 h-14 mb-3 object-contain"
+                    />
+                    <h3 class="text-lg font-semibold">Senior Game Developer</h3>
+                    <span class="text-xs text-gray-500"
+                      >Sep 2022 – Jun 2023</span
+                    >
+                    <p class="text-sm">Playense</p>
+                  </div>
+                </div>
+
+                <!-- Item 3 (Left) -->
+                <div class="mb-16 flex justify-start w-full">
+                  <div class="w-1/2 pr-8 text-right">
+                    <img
+                      src="assets/images/fiverr.png"
+                      alt="Fiverr"
+                      class="w-14 h-14 ml-auto mb-3 object-contain"
+                    />
+                    <h3 class="text-lg font-semibold">
+                      Graphic Designer (Level 2) — Cartoonist
+                    </h3>
+                    <span class="text-xs text-gray-500"
+                      >Apr 2016 – Aug 2022</span
+                    >
+                    <p class="text-sm">Fiverr</p>
+                  </div>
+                  <div class="w-1/2 relative">
+                    <div
+                      class="absolute -left-3 top-6 w-6 h-6 rounded-full bg-yellow-500 border-4 border-gray-50"
+                    ></div>
+                  </div>
+                </div>
+
+                <!-- Item 4 (Right) -->
+                <div class="mb-16 flex justify-end w-full">
+                  <div class="w-1/2 relative">
+                    <div
+                      class="absolute -right-3 top-6 w-6 h-6 rounded-full bg-yellow-500 border-4 border-gray-50"
+                    ></div>
+                  </div>
+                  <div class="w-1/2 pl-8 text-left">
+                    <img
+                      src="assets/images/aust.png"
+                      alt="AUST Innovation and Design Club"
+                      class="bg-black px-2 w-14 h-14 mb-3 object-contain"
+                    />
+                    <h3 class="text-lg font-semibold">
+                      Joint Secretary, Graphic Designer
+                    </h3>
+                    <span class="text-xs text-gray-500"
+                      >Nov 2017 – Nov 2018</span
+                    >
+                    <p class="text-sm">AUST Innovation and Design Club</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-      </main>
+          </section>
 
-      <main
-        class="flex flex-wrap justify-center items-center md:items-start md:justify-between lg:max-w-[90%] mx-auto"
-      >
-        <!-- Experience Section  -->
-        <section id="experience" class="bg-gray-50 text-gray-900 py-16 mt-32">
+          <!-- Awar Section  -->
+          <section id="awards" class="bg-gray-50 text-gray-900 py-16 mt-32">
+            <div class="container mx-auto px-6">
+              <!-- Section Header -->
+              <h2 class="text-3xl font-bold mb-12 text-center">🏆 Awards</h2>
+
+              <!-- Timeline Wrapper -->
+              <div class="relative">
+                <!-- Vertical Line -->
+                <div
+                  class="absolute left-1/2 transform -translate-x-1/2 h-full border-l-4 border-gray-300"
+                ></div>
+
+                <!-- Champion - Game Developer(Left) -->
+                <div class="mb-16 flex justify-start w-full">
+                  <div class="w-1/2 pr-8 text-right">
+                    <img
+                      src="assets/images/certs/iut.jpg"
+                      alt="IUT ICT FEST"
+                      class="w-14 h-14 ml-auto mb-3 object-contain"
+                    />
+                    <h3 class="text-lg font-semibold">
+                      Champion - Game Developer
+                    </h3>
+                    <p class="text-sm">IUT ICT FEST 2016</p>
+                  </div>
+                  <div class="w-1/2 relative">
+                    <div
+                      class="absolute -left-3 top-6 w-6 h-6 rounded-full bg-yellow-500 border-4 border-gray-50"
+                    ></div>
+                  </div>
+                </div>
+
+                <!-- Champion Software (Right) -->
+                <div class="mb-16 flex justify-end w-full">
+                  <div class="w-1/2 relative">
+                    <div
+                      class="absolute -right-3 top-6 w-6 h-6 rounded-full bg-yellow-500 border-4 border-gray-50"
+                    ></div>
+                  </div>
+                  <div class="w-1/2 pl-8 text-left">
+                    <img
+                      src="assets/images/certs/aust.jpg"
+                      alt="Playense"
+                      class="bg-black px-2 w-14 h-14 mb-3 object-contain"
+                    />
+                    <h3 class="text-lg font-semibold">Champion - Softwre</h3>
+                    <span class="text-xs text-gray-500">
+                      Intra AUST Technomania 2018</span
+                    >
+                  </div>
+                </div>
+
+                <!-- Champion - Game Development - National RoboTech Fest 2017 (Left) -->
+                <div class="mb-16 flex justify-start w-full">
+                  <div class="w-1/2 pr-8 text-right">
+                    <img
+                      src="assets/images/certs/nrf.jpg"
+                      alt="Fiverr"
+                      class="w-14 h-14 ml-auto mb-3 object-contain"
+                    />
+                    <h3 class="text-lg font-semibold">
+                      Champion - Game Development
+                    </h3>
+                    <span class="text-xs text-gray-500"
+                      >Apr 2016 - Aug 2022</span
+                    >
+                    <p class="text-sm">National RoboTech Fest 2017</p>
+                  </div>
+                  <div class="w-1/2 relative">
+                    <div
+                      class="absolute -left-3 top-6 w-6 h-6 rounded-full bg-yellow-500 border-4 border-gray-50"
+                    ></div>
+                  </div>
+                </div>
+
+                <!-- 1st Runner Up in Networking War - International Telco Warfare 2018 (Right) -->
+                <div class="mb-16 flex justify-end w-full">
+                  <div class="w-1/2 relative">
+                    <div
+                      class="absolute -right-3 top-6 w-6 h-6 rounded-full bg-yellow-500 border-4 border-gray-50"
+                    ></div>
+                  </div>
+                  <div class="w-1/2 pl-8 text-left">
+                    <img
+                      src="assets/images/certs/ew.jpg"
+                      alt="AUST IDC"
+                      class="bg-black px-2 w-14 h-14 mb-3 object-contain"
+                    />
+                    <h3 class="text-lg font-semibold">
+                      1st Runner Up in Networking War
+                    </h3>
+                    <span class="text-xs text-gray-500"
+                      >International Telco Warfare 2018</span
+                    >
+                  </div>
+                </div>
+
+                <!-- Top 27 - Grameenphone Game Jam 2017 (Left) -->
+                <div class="mb-16 flex justify-start w-full">
+                  <div class="w-1/2 pr-8 text-right">
+                    <img
+                      src="assets/images/certs/gp.jpg"
+                      alt="Fiverr"
+                      class="w-14 h-14 ml-auto mb-3 object-contain"
+                    />
+                    <h3 class="text-lg font-semibold">
+                      Grameenphone Game Jam 2017
+                    </h3>
+                    <span class="text-xs text-gray-500">Top 27</span>
+                  </div>
+                  <div class="w-1/2 relative">
+                    <div
+                      class="absolute -left-3 top-6 w-6 h-6 rounded-full bg-yellow-500 border-4 border-gray-50"
+                    ></div>
+                  </div>
+                </div>
+
+                <!-- Top 40 - NASA Space Apps Challenge 2018 (Right) -->
+                <div class="mb-16 flex justify-end w-full">
+                  <div class="w-1/2 relative">
+                    <div
+                      class="absolute -right-3 top-6 w-6 h-6 rounded-full bg-yellow-500 border-4 border-gray-50"
+                    ></div>
+                  </div>
+                  <div class="w-1/2 pl-8 text-left">
+                    <img
+                      src="assets/images/certs/nasa.jpg"
+                      alt="AUST IDC"
+                      class="bg-black px-2 w-14 h-14 mb-3 object-contain"
+                    />
+                    <h3 class="text-lg font-semibold">
+                      NASA Space Apps Challenge 2018
+                    </h3>
+                    <span class="text-xs text-gray-500">Top 40</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Voluntering -->
+          <section id="awards" class="bg-gray-50 text-gray-900 py-16 mt-32">
+            <div class="container mx-auto px-6">
+              <!-- Section Header -->
+              <h2 class="text-3xl font-bold mb-12 text-center">
+                🙋🏻‍♂️Volunteering
+              </h2>
+
+              <!-- Timeline Wrapper -->
+              <div class="relative">
+                <!-- Vertical Line -->
+                <div
+                  class="absolute left-1/2 transform -translate-x-1/2 h-full border-l-4 border-gray-300"
+                ></div>
+
+                <!-- Event Organizer - Game Developer(Left) -->
+                <div class="mb-16 flex justify-start w-full">
+                  <div class="w-1/2 pr-8 text-right">
+                    <img
+                      src="assets/images/certs/al.jpg"
+                      alt="IUT ICT FEST"
+                      class="w-14 h-14 ml-auto mb-3 object-contain"
+                    />
+                    <h3 class="text-lg font-semibold">
+                      Event Orginanizer & Community Manager
+                    </h3>
+                    <p class="text-sm">Ato University</p>
+                    <p class="text-sm">(2023 - 2024)</p>
+                  </div>
+                  <div class="w-1/2 relative">
+                    <div
+                      class="absolute -left-3 top-6 w-6 h-6 rounded-full bg-yellow-500 border-4 border-gray-50"
+                    ></div>
+                  </div>
+                </div>
+
+                <!-- Co-founder, Artist (Right) -->
+                <div class="mb-16 flex justify-end w-full">
+                  <div class="w-1/2 relative">
+                    <div
+                      class="absolute -right-3 top-6 w-6 h-6 rounded-full bg-yellow-500 border-4 border-gray-50"
+                    ></div>
+                  </div>
+                  <div class="w-1/2 pl-8 text-left">
+                    <img
+                      src="assets/images/certs/aust.jpg"
+                      alt="Playense"
+                      class="bg-black px-2 w-14 h-14 mb-3 object-contain"
+                    />
+                    <h3 class="text-lg font-semibold">Co-Founder, Artist</h3>
+                    <span class="text-sm text-gray-500">
+                      Shilpanudan (শিল্পানুদান)</span
+                    >
+
+                    <span class="text-xs text-gray-500"> 2024</span>
+                  </div>
+                </div>
+
+                <!-- Event Organizer, Segment Coordinator (Software Showcase), Graphic Designer of "MindSparks 19"(Left) -->
+                <div class="mb-16 flex justify-start w-full">
+                  <div class="w-1/2 pr-8 text-right">
+                    <img
+                      src="assets/images/certs/nrf.jpg"
+                      alt="Fiverr"
+                      class="w-14 h-14 ml-auto mb-3 object-contain"
+                    />
+                    <h3 class="text-lg font-semibold">
+                      Event Organizer,<br />
+                      Segment Coordinator (Software Showcase),<br />
+                      Graphic Designer
+                    </h3>
+                    <p class="text-sm">MindSparks 19</p>
+                    <p class="text-xs">2019</p>
+                  </div>
+                  <div class="w-1/2 relative">
+                    <div
+                      class="absolute -left-3 top-6 w-6 h-6 rounded-full bg-yellow-500 border-4 border-gray-50"
+                    ></div>
+                  </div>
+                </div>
+
+                <!-- Instructor for "Workshop on Game Design & Development" hosted by AUST IDC 2024 (Right) -->
+                <div class="mb-16 flex justify-end w-full">
+                  <div class="w-1/2 relative">
+                    <div
+                      class="absolute -right-3 top-6 w-6 h-6 rounded-full bg-yellow-500 border-4 border-gray-50"
+                    ></div>
+                  </div>
+                  <div class="w-1/2 pl-8 text-left">
+                    <img
+                      src="assets/images/certs/ew.jpg"
+                      alt="AUST IDC"
+                      class="bg-black px-2 w-14 h-14 mb-3 object-contain"
+                    />
+                    <h3 class="text-lg font-semibold">
+                      Instructor for "Workshop on Game Design & Development"
+                    </h3>
+                    <span class="text-sm text-gray-500"
+                      >hosted by AUST IDC</span
+                    >
+                    <span class="text-xs text-gray-500">2024</span>
+                  </div>
+                </div>
+
+                <!-- Instructor for "Workshop on Graphic Design (Illustrator and Photoshop)" hosted by AUST IDC (Left) -->
+                <div class="mb-16 flex justify-start w-full">
+                  <div class="w-1/2 pr-8 text-right">
+                    <img
+                      src="assets/images/certs/gp.jpg"
+                      alt="Fiverr"
+                      class="w-14 h-14 ml-auto mb-3 object-contain"
+                    />
+                    <h3 class="text-lg font-semibold">
+                      Instructor for "Workshop on Graphic Design (Illustrator
+                      and Photoshop)"
+                    </h3>
+                    <span class="text-sm text-gray-500"
+                      >hosted by AUST IDC</span
+                    >
+                    <span class="text-xs text-gray-500">2019</span>
+                  </div>
+                  <div class="w-1/2 relative">
+                    <div
+                      class="absolute -left-3 top-6 w-6 h-6 rounded-full bg-yellow-500 border-4 border-gray-50"
+                    ></div>
+                  </div>
+                </div>
+
+                <!-- Panel Research Community Member of "Unity Pulse"  (Right) -->
+                <div class="mb-16 flex justify-end w-full">
+                  <div class="w-1/2 relative">
+                    <div
+                      class="absolute -right-3 top-6 w-6 h-6 rounded-full bg-yellow-500 border-4 border-gray-50"
+                    ></div>
+                  </div>
+                  <div class="w-1/2 pl-8 text-left">
+                    <img
+                      src="assets/images/certs/nasa.jpg"
+                      alt="AUST IDC"
+                      class="bg-black px-2 w-14 h-14 mb-3 object-contain"
+                    />
+                    <h3 class="text-lg font-semibold">
+                      Panel Research Community Member of "Unity Pulse"
+                    </h3>
+                    <span class="text-xs text-gray-500">2021 - Present</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+
+      
+
+        <!-- ======= Skills Section ======= -->
+        <section id="skills" class="py-16 bg-gray-50">
           <div class="container mx-auto px-6">
-            <!-- Section Header -->
-            <h2 class="text-3xl font-bold mb-12 flex items-center text-center">
-              💼 Work Experience
-            </h2>
+            <div class="text-center mb-10">
+              <h2 class="text-3xl font-bold">💪 Proficiency</h2>
+            </div>
 
-            <!-- Timeline Wrapper -->
-            <div class="relative">
-              <!-- Vertical Line -->
-              <div
-                class="absolute left-1/2 transform -translate-x-1/2 h-full border-l-4 border-gray-300"
-              ></div>
-
-              <!-- Item 1 (Left) -->
-              <div class="mb-16 flex justify-start w-full">
-                <div class="w-1/2 pr-8 text-right">
-                  <img
-                    src="assets/images/aalto.png"
-                    alt="Aalto University"
-                    class="w-14 h-14 ml-auto mb-3 object-contain"
-                  />
-                  <h3 class="text-lg font-semibold">Research Assistant</h3>
-                  <span class="text-xs text-gray-500">Jun 2024 – Present</span>
-
-                  <h3 class="text-lg font-semibold mt-2">Student Tutor</h3>
-                  <span class="text-xs text-gray-500">Mar 2024 – Dec 2024</span>
-
-                  <p class="text-sm mt-2">Aalto University</p>
-                </div>
-                <div class="w-1/2 relative">
-                  <div
-                    class="absolute -left-3 top-6 w-6 h-6 rounded-full bg-yellow-500 border-4 border-gray-50"
-                  ></div>
-                </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+              <!-- Programming -->
+              <div>
+                <h3 class="text-xl font-semibold mb-4">Programming</h3>
+                <ul class="space-y-3">
+                  <li class="bg-white shadow rounded px-4 py-2">C</li>
+                  <li class="bg-white shadow rounded px-4 py-2">C#</li>
+                  <li class="bg-white shadow rounded px-4 py-2">Blueprint</li>
+                  <li class="bg-white shadow rounded px-4 py-2">C++</li>
+                  <li class="bg-white shadow rounded px-4 py-2">Python</li>
+                  <li class="bg-white shadow rounded px-4 py-2">Java</li>
+                  <li class="bg-white shadow rounded px-4 py-2">SQL</li>
+                  <li class="bg-white shadow rounded px-4 py-2">JS</li>
+                  <li class="bg-white shadow rounded px-4 py-2">PHP</li>
+                  <li class="bg-white shadow rounded px-4 py-2">HTML, CSS</li>
+                </ul>
               </div>
 
-              <!-- Item 2 (Right) -->
-              <div class="mb-16 flex justify-end w-full">
-                <div class="w-1/2 relative">
-                  <div
-                    class="absolute -right-3 top-6 w-6 h-6 rounded-full bg-yellow-500 border-4 border-gray-50"
-                  ></div>
-                </div>
-                <div class="w-1/2 pl-8 text-left">
-                  <img
-                    src="assets/images/playense.png"
-                    alt="Playense"
-                    class="bg-black px-2 w-14 h-14 mb-3 object-contain"
-                  />
-                  <h3 class="text-lg font-semibold">Senior Game Developer</h3>
-                  <span class="text-xs text-gray-500">Sep 2022 – Jun 2023</span>
-                  <p class="text-sm">Playense</p>
-                </div>
-              </div>
+              <!-- Languages -->
+              <div>
+                <h3 class="text-xl font-semibold mb-4">Languages</h3>
 
-              <!-- Item 3 (Left) -->
-              <div class="mb-16 flex justify-start w-full">
-                <div class="w-1/2 pr-8 text-right">
-                  <img
-                    src="assets/images/fiverr.png"
-                    alt="Fiverr"
-                    class="w-14 h-14 ml-auto mb-3 object-contain"
-                  />
-                  <h3 class="text-lg font-semibold">
-                    Graphic Designer (Level 2) — Cartoonist
-                  </h3>
-                  <span class="text-xs text-gray-500">Apr 2016 – Aug 2022</span>
-                  <p class="text-sm">Fiverr</p>
+                <!-- English -->
+                <div class="mb-5">
+                  <div class="flex justify-between mb-1">
+                    <span class="font-medium">🇬🇧 English</span>
+                    <span class="text-sm text-gray-600"
+                      >IELTS Academic 7.5/9</span
+                    >
+                  </div>
+                  <div class="w-full bg-gray-200 rounded-full h-3">
+                    <div
+                      class="bg-green-500 h-3 rounded-full"
+                      style="width: 80%"
+                    ></div>
+                  </div>
                 </div>
-                <div class="w-1/2 relative">
-                  <div
-                    class="absolute -left-3 top-6 w-6 h-6 rounded-full bg-yellow-500 border-4 border-gray-50"
-                  ></div>
-                </div>
-              </div>
 
-              <!-- Item 4 (Right) -->
-              <div class="mb-16 flex justify-end w-full">
-                <div class="w-1/2 relative">
-                  <div
-                    class="absolute -right-3 top-6 w-6 h-6 rounded-full bg-yellow-500 border-4 border-gray-50"
-                  ></div>
+                <!-- Finnish -->
+                <div class="mb-5">
+                  <div class="flex justify-between mb-1">
+                    <span class="font-medium">🇫🇮 Finnish</span>
+                    <span class="text-sm text-gray-600">Finnish 1 Course</span>
+                  </div>
+                  <div class="w-full bg-gray-200 rounded-full h-3">
+                    <div
+                      class="bg-blue-500 h-3 rounded-full"
+                      style="width: 80%"
+                    ></div>
+                  </div>
                 </div>
-                <div class="w-1/2 pl-8 text-left">
-                  <img
-                    src="assets/images/aust.png"
-                    alt="AUST Innovation and Design Club"
-                    class="bg-black px-2 w-14 h-14 mb-3 object-contain"
-                  />
-                  <h3 class="text-lg font-semibold">
-                    Joint Secretary, Graphic Designer
-                  </h3>
-                  <span class="text-xs text-gray-500">Nov 2017 – Nov 2018</span>
-                  <p class="text-sm">AUST Innovation and Design Club</p>
+
+                <!-- Bangla -->
+                <div class="mb-5">
+                  <div class="flex justify-between mb-1">
+                    <span class="font-medium">🇧🇩 Bangla</span>
+                    <span class="text-sm text-gray-600">Native Language</span>
+                  </div>
+                  <div class="w-full bg-gray-200 rounded-full h-3">
+                    <div
+                      class="bg-yellow-500 h-3 rounded-full"
+                      style="width: 100%"
+                    ></div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
+        <!-- End Skills Section -->
 
-        <!-- Awar Section  -->
-        <section id="awards" class="bg-gray-50 text-gray-900 py-16 mt-32">
+        <!-- ======= Tools Section ======= -->
+        <section id="tools" class="py-16 bg-gray-50">
           <div class="container mx-auto px-6">
-            <!-- Section Header -->
-            <h2 class="text-3xl font-bold mb-12 text-center">🏆 Awards</h2>
-
-            <!-- Timeline Wrapper -->
-            <div class="relative">
-              <!-- Vertical Line -->
-              <div
-                class="absolute left-1/2 transform -translate-x-1/2 h-full border-l-4 border-gray-300"
-              ></div>
-
-              <!-- Champion - Game Developer(Left) -->
-              <div class="mb-16 flex justify-start w-full">
-                <div class="w-1/2 pr-8 text-right">
-                  <img
-                    src="assets/images/certs/iut.jpg"
-                    alt="IUT ICT FEST"
-                    class="w-14 h-14 ml-auto mb-3 object-contain"
-                  />
-                  <h3 class="text-lg font-semibold">
-                    Champion - Game Developer
-                  </h3>
-                  <p class="text-sm">IUT ICT FEST 2016</p>
-                </div>
-                <div class="w-1/2 relative">
-                  <div
-                    class="absolute -left-3 top-6 w-6 h-6 rounded-full bg-yellow-500 border-4 border-gray-50"
-                  ></div>
-                </div>
-              </div>
-
-              <!-- Champion Software (Right) -->
-              <div class="mb-16 flex justify-end w-full">
-                <div class="w-1/2 relative">
-                  <div
-                    class="absolute -right-3 top-6 w-6 h-6 rounded-full bg-yellow-500 border-4 border-gray-50"
-                  ></div>
-                </div>
-                <div class="w-1/2 pl-8 text-left">
-                  <img
-                    src="assets/images/certs/aust.jpg"
-                    alt="Playense"
-                    class="bg-black px-2 w-14 h-14 mb-3 object-contain"
-                  />
-                  <h3 class="text-lg font-semibold">Champion - Softwre</h3>
-                  <span class="text-xs text-gray-500">
-                    Intra AUST Technomania 2018</span
-                  >
-                </div>
-              </div>
-
-              <!-- Champion - Game Development - National RoboTech Fest 2017 (Left) -->
-              <div class="mb-16 flex justify-start w-full">
-                <div class="w-1/2 pr-8 text-right">
-                  <img
-                    src="assets/images/certs/nrf.jpg"
-                    alt="Fiverr"
-                    class="w-14 h-14 ml-auto mb-3 object-contain"
-                  />
-                  <h3 class="text-lg font-semibold">
-                    Champion - Game Development
-                  </h3>
-                  <span class="text-xs text-gray-500">Apr 2016 - Aug 2022</span>
-                  <p class="text-sm">National RoboTech Fest 2017</p>
-                </div>
-                <div class="w-1/2 relative">
-                  <div
-                    class="absolute -left-3 top-6 w-6 h-6 rounded-full bg-yellow-500 border-4 border-gray-50"
-                  ></div>
-                </div>
-              </div>
-
-              <!-- 1st Runner Up in Networking War - International Telco Warfare 2018 (Right) -->
-              <div class="mb-16 flex justify-end w-full">
-                <div class="w-1/2 relative">
-                  <div
-                    class="absolute -right-3 top-6 w-6 h-6 rounded-full bg-yellow-500 border-4 border-gray-50"
-                  ></div>
-                </div>
-                <div class="w-1/2 pl-8 text-left">
-                  <img
-                    src="assets/images/certs/ew.jpg"
-                    alt="AUST IDC"
-                    class="bg-black px-2 w-14 h-14 mb-3 object-contain"
-                  />
-                  <h3 class="text-lg font-semibold">
-                    1st Runner Up in Networking War
-                  </h3>
-                  <span class="text-xs text-gray-500"
-                    >International Telco Warfare 2018</span
-                  >
-                </div>
-              </div>
-
-              <!-- Top 27 - Grameenphone Game Jam 2017 (Left) -->
-              <div class="mb-16 flex justify-start w-full">
-                <div class="w-1/2 pr-8 text-right">
-                  <img
-                    src="assets/images/certs/gp.jpg"
-                    alt="Fiverr"
-                    class="w-14 h-14 ml-auto mb-3 object-contain"
-                  />
-                  <h3 class="text-lg font-semibold">
-                    Grameenphone Game Jam 2017
-                  </h3>
-                  <span class="text-xs text-gray-500">Top 27</span>
-                </div>
-                <div class="w-1/2 relative">
-                  <div
-                    class="absolute -left-3 top-6 w-6 h-6 rounded-full bg-yellow-500 border-4 border-gray-50"
-                  ></div>
-                </div>
-              </div>
-
-              <!-- Top 40 - NASA Space Apps Challenge 2018 (Right) -->
-              <div class="mb-16 flex justify-end w-full">
-                <div class="w-1/2 relative">
-                  <div
-                    class="absolute -right-3 top-6 w-6 h-6 rounded-full bg-yellow-500 border-4 border-gray-50"
-                  ></div>
-                </div>
-                <div class="w-1/2 pl-8 text-left">
-                  <img
-                    src="assets/images/certs/nasa.jpg"
-                    alt="AUST IDC"
-                    class="bg-black px-2 w-14 h-14 mb-3 object-contain"
-                  />
-                  <h3 class="text-lg font-semibold">
-                    NASA Space Apps Challenge 2018
-                  </h3>
-                  <span class="text-xs text-gray-500">Top 40</span>
-                </div>
-              </div>
+            <div class="text-center mb-10">
+              <h2 class="text-3xl font-bold">🔧 Tools</h2>
             </div>
-          </div>
-        </section>
 
-        <!-- Voluntering -->
-        <section id="awards" class="bg-gray-50 text-gray-900 py-16 mt-32">
-          <div class="container mx-auto px-6">
-            <!-- Section Header -->
-            <h2 class="text-3xl font-bold mb-12 text-center">🙋🏻‍♂️Volunteering</h2>
-
-            <!-- Timeline Wrapper -->
-            <div class="relative">
-              <!-- Vertical Line -->
-              <div
-                class="absolute left-1/2 transform -translate-x-1/2 h-full border-l-4 border-gray-300"
-              ></div>
-
-              <!-- Event Organizer - Game Developer(Left) -->
-              <div class="mb-16 flex justify-start w-full">
-                <div class="w-1/2 pr-8 text-right">
-                  <img
-                    src="assets/images/certs/al.jpg"
-                    alt="IUT ICT FEST"
-                    class="w-14 h-14 ml-auto mb-3 object-contain"
-                  />
-                  <h3 class="text-lg font-semibold">
-                    Event Orginanizer & Community Manager
-                  </h3>
-                  <p class="text-sm">Ato University</p>
-                  <p class="text-sm">(2023 - 2024)</p>
-                </div>
-                <div class="w-1/2 relative">
-                  <div
-                    class="absolute -left-3 top-6 w-6 h-6 rounded-full bg-yellow-500 border-4 border-gray-50"
-                  ></div>
-                </div>
-              </div>
-
-              <!-- Co-founder, Artist (Right) -->
-              <div class="mb-16 flex justify-end w-full">
-                <div class="w-1/2 relative">
-                  <div
-                    class="absolute -right-3 top-6 w-6 h-6 rounded-full bg-yellow-500 border-4 border-gray-50"
-                  ></div>
-                </div>
-                <div class="w-1/2 pl-8 text-left">
-                  <img
-                    src="assets/images/certs/aust.jpg"
-                    alt="Playense"
-                    class="bg-black px-2 w-14 h-14 mb-3 object-contain"
-                  />
-                  <h3 class="text-lg font-semibold">Co-Founder, Artist</h3>
-                  <span class="text-sm text-gray-500">
-                    Shilpanudan (শিল্পানুদান)</span
-                  >
-
-                  <span class="text-xs text-gray-500"> 2024</span>
-                </div>
-              </div>
-
-              <!-- Event Organizer, Segment Coordinator (Software Showcase), Graphic Designer of "MindSparks 19"(Left) -->
-              <div class="mb-16 flex justify-start w-full">
-                <div class="w-1/2 pr-8 text-right">
-                  <img
-                    src="assets/images/certs/nrf.jpg"
-                    alt="Fiverr"
-                    class="w-14 h-14 ml-auto mb-3 object-contain"
-                  />
-                  <h3 class="text-lg font-semibold">
-                    Event Organizer,<br />
-                    Segment Coordinator (Software Showcase),<br />
-                    Graphic Designer
-                  </h3>
-                  <p class="text-sm">MindSparks 19</p>
-                  <p class="text-xs">2019</p>
-                </div>
-                <div class="w-1/2 relative">
-                  <div
-                    class="absolute -left-3 top-6 w-6 h-6 rounded-full bg-yellow-500 border-4 border-gray-50"
-                  ></div>
-                </div>
-              </div>
-
-              <!-- Instructor for "Workshop on Game Design & Development" hosted by AUST IDC 2024 (Right) -->
-              <div class="mb-16 flex justify-end w-full">
-                <div class="w-1/2 relative">
-                  <div
-                    class="absolute -right-3 top-6 w-6 h-6 rounded-full bg-yellow-500 border-4 border-gray-50"
-                  ></div>
-                </div>
-                <div class="w-1/2 pl-8 text-left">
-                  <img
-                    src="assets/images/certs/ew.jpg"
-                    alt="AUST IDC"
-                    class="bg-black px-2 w-14 h-14 mb-3 object-contain"
-                  />
-                  <h3 class="text-lg font-semibold">
-                    Instructor for "Workshop on Game Design & Development"
-                  </h3>
-                  <span class="text-sm text-gray-500">hosted by AUST IDC</span>
-                  <span class="text-xs text-gray-500">2024</span>
-                </div>
-              </div>
-
-              <!-- Instructor for "Workshop on Graphic Design (Illustrator and Photoshop)" hosted by AUST IDC (Left) -->
-              <div class="mb-16 flex justify-start w-full">
-                <div class="w-1/2 pr-8 text-right">
-                  <img
-                    src="assets/images/certs/gp.jpg"
-                    alt="Fiverr"
-                    class="w-14 h-14 ml-auto mb-3 object-contain"
-                  />
-                  <h3 class="text-lg font-semibold">
-                    Instructor for "Workshop on Graphic Design (Illustrator and
-                    Photoshop)"
-                  </h3>
-                  <span class="text-sm text-gray-500">hosted by AUST IDC</span>
-                  <span class="text-xs text-gray-500">2019</span>
-                </div>
-                <div class="w-1/2 relative">
-                  <div
-                    class="absolute -left-3 top-6 w-6 h-6 rounded-full bg-yellow-500 border-4 border-gray-50"
-                  ></div>
-                </div>
-              </div>
-
-              <!-- Panel Research Community Member of "Unity Pulse"  (Right) -->
-              <div class="mb-16 flex justify-end w-full">
-                <div class="w-1/2 relative">
-                  <div
-                    class="absolute -right-3 top-6 w-6 h-6 rounded-full bg-yellow-500 border-4 border-gray-50"
-                  ></div>
-                </div>
-                <div class="w-1/2 pl-8 text-left">
-                  <img
-                    src="assets/images/certs/nasa.jpg"
-                    alt="AUST IDC"
-                    class="bg-black px-2 w-14 h-14 mb-3 object-contain"
-                  />
-                  <h3 class="text-lg font-semibold">
-                    Panel Research Community Member of "Unity Pulse"
-                  </h3>
-                  <span class="text-xs text-gray-500">2021 - Present</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      <!-- Research & Publications -->
-
-      <section class="space-y-4 my-20">
-        <h2 class="text-center text-3xl font-bold my-10">
-          Research & Publications
-        </h2>
-        <div
-          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-x-6 gap-y-10 md:max-w-7xl mx-auto"
-        >
-          <div
-            class="bg-white shadow-md transform transition duration-300 hover:scale-105 hover:shadow-xl rounded-lg p-4"
-          >
-            <!-- Image -->
-            <a href="https://doi.org/10.1145/3697789.3697804" target="_blank">
-              <img
-                src="assets/images/icgj24.png"
-                alt="Rapid Game World Creation"
-                class="w-full h-48 object-cover rounded-md"
-              />
-            </a>
-
-            <!-- Title -->
-            <p class="mt-4 font-medium text-gray-800">
-              <a
-                href="https://doi.org/10.1145/3697789.3697804"
-                target="_blank"
-                class="hover:text-green-600"
-              >
-                Rapid Game World Creation Leveraging Geospatial Data in Game
-                Jams: The ’Galactic Gourmet’ Post-Mortem
-              </a>
-            </p>
-
-            <!-- Description -->
-            <p class="text-sm text-gray-600 mt-2">
-              ICGJ '24: Proceedings of the 8th International Conference on Game
-              Jams, Hackathons and Game Creation Events, Copenhagen, Denmark,
-              October 2024.<br />
-              DOI:
-              <a
-                href="https://doi.org/10.1145/3697789.3697804"
-                class="text-blue-600 hover:underline"
-              >
-                doi.org/10.1145/3697789.3697804
-              </a>
-            </p>
-
-            <!-- Buttons & Tags -->
-            <div class="mt-4 flex items-center gap-3 flex-wrap">
-              <!-- Paper Button -->
-              <a
-                href="https://doi.org/10.1145/3697789.3697804"
-                target="_blank"
-                class="bg-green-600 hover:bg-green-700 text-white text-sm px-3 py-1.5 rounded-md shadow-sm"
-              >
-                Paper
-              </a>
-
-              <!-- Tags -->
-              <span
-                class="border border-black text-gray-700 text-xs px-2 py-1 rounded-md"
-              >
-                Conference
-              </span>
-              <span
-                class="border border-black text-gray-700 text-xs px-2 py-1 rounded-md"
-              >
-                2024
-              </span>
-            </div>
-          </div>
-
-          <div
-            class="bg-gray-50 shadow-md transform transition duration-300 hover:scale-105 hover:shadow-xl rounded-lg p-4"
-          >
-            <!-- Image -->
-            <a href="Balancing-Clash-Royale.html" target="_blank">
-              <img
-                src="assets/images/clashbalance.png"
-                alt="Clash Royale Project"
-                class="h-[185px] w-[320px] rounded-md object-cover mx-auto"
-              />
-            </a>
-
-            <!-- Title -->
-            <p class="mt-3 font-semibold text-gray-900">
-              <a
-                href="Balancing-Clash-Royale.html"
-                target="_blank"
-                class="hover:underline"
-              >
-                Balancing Clash Royale: Through Card vs Card Battle Simulations
-                and Cost-Benefit Analysis
-              </a>
-            </p>
-
-            <!-- Short Description -->
-            <p class="text-sm text-gray-700 mt-2 text-left">
-              A Game Analysis project aimed at analyzing the game balance of
-              popular Supercell game, Clash Royale.
-            </p>
-
-            <!-- Detailed Description -->
-            <p class="text-sm text-gray-700 mt-2 text-left">
-              This python project features data scraping, cleaning and
-              processing, realistic card vs card battle simulation featuring
-              various parameters, card cost-benefit calculation through
-              analyzing their correlations etc.<br />
-              <span class="font-medium">Learnings:</span> game analysis,
-              balancing, design, data processing, python programming.
-            </p>
-
-            <!-- Buttons + Tags -->
-            <div class="mt-4 flex items-center flex-wrap gap-2">
-              <!-- Read Button -->
-              <a
-                href="Balancing-Clash-Royale.html"
-                target="_blank"
-                class="bg-green-600 hover:bg-green-700 text-white text-sm font-medium px-4 py-1 rounded"
-              >
-                Read
-              </a>
-
-              <!-- Tags -->
-              <span
-                class="border border-black rounded px-2 py-1 text-xs text-gray-700"
-              >
-                Game Analysis
-              </span>
-              <span
-                class="border border-black rounded px-2 py-1 text-xs text-gray-700"
-              >
-                2024
-              </span>
-            </div>
-          </div>
-
-          <div
-            class="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl"
-          >
-            <!-- Image -->
-            <a
-              href="https://drive.google.com/file/d/10vu7HyCQjx_-XTTwEz0GGQomZPynV6Gs/view?usp=sharing"
-              target="_blank"
+            <div
+              class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  gap-8 mb-12"
             >
-              <img
-                src="assets/images/gd.jpg"
-                alt="Gamecraft Workshop"
-                class="w-full h-48 object-cover rounded-t-lg"
-              />
-            </a>
-
-            <!-- Content -->
-            <div class="p-4">
-              <p
-                class="text-lg font-semibold text-gray-800 hover:text-green-600 transition duration-200"
+              <div
+                class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition"
               >
+                <img
+                  src="assets/images/unity.png"
+                  alt="Unity"
+                  class="w-16 h-16 mx-auto"
+                />
+                <h4 class="mt-4 text-lg font-semibold text-center">Unity</h4>
+                <p class="mt-2 text-sm text-gray-600 text-center">
+                  Primary game engine used to create over 50+ games and
+                  prototypes since 2016. Developed for PC, Android, iOS, Web,
+                  Playable Ads, and Meta Quest.
+                </p>
+              </div>
+
+              <div
+                class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition"
+              >
+                <img
+                  src="assets/images/unreal.png"
+                  alt="Unreal Engine"
+                  class="w-16 h-16 mx-auto bg-black"
+                />
+                <h4 class="mt-4 text-lg font-semibold text-center">
+                  Unreal Engine
+                </h4>
+                <p class="mt-2 text-sm text-gray-600 text-center">
+                  Basic understanding of UE editor & blueprints. Implemented
+                  mechanics, backend, and UI for "Thoughts Out" using Unreal 5.
+                </p>
+              </div>
+
+              
+              <div
+                class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition"
+              >
+                <img
+                  src="assets/images/adobe.png"
+                  alt="Adobe"
+                  class="w-16 h-16 mx-auto"
+                />
+                <h4 class="mt-4 text-lg font-semibold text-center">
+                  Adobe Illustrator
+                </h4>
+                <p class="mt-2 text-sm text-gray-600 text-center">
+                  Using since 2016 for 2D assets, UI, textures, logos, banners,
+                  and character art.
+                </p>
+              </div>
+
+              <div
+                class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition"
+              >
+                <img
+                  src="assets/images/github.png"
+                  alt="Github"
+                  class="w-16 h-16 mx-auto rounded-full bg-black"
+                />
+                <h4 class="mt-4 text-lg font-semibold text-center">Github</h4>
+                <p class="mt-2 text-sm text-gray-600 text-center">
+                  Using GitHub Desktop & SourceTree for version control,
+                  collaboration, and cloud hosting. Also familiar with Git CLI.
+                </p>
+              </div>
+
+              <div
+                class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition"
+              >
+                <img
+                  src="assets/images/vs.png"
+                  alt="Visual Studio"
+                  class="w-16 h-16 mx-auto"
+                />
+                <h4 class="mt-4 text-lg font-semibold text-center">
+                  Visual Studio
+                </h4>
+                <p class="mt-2 text-sm text-gray-600 text-center">
+                  Primary IDE for C# development. Also use VS Code for
+                  lightweight projects.
+                </p>
+              </div>
+
+             
+
+              <div
+                class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition"
+              >
+                <img
+                  src="assets/images/figma.png"
+                  alt="Visual Studio"
+                  class="w-16 h-16 mx-auto"
+                />
+                <h4 class="mt-4 text-lg font-semibold text-center">
+                  Figma
+                </h4>
+                <p class="mt-2 text-sm text-gray-600 text-center">
+                  A cloud-based interface design tool that allows teams to collaborate on websites, apps, and digital products in real-time
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Tools Section -->
+
+        <!-- Art Section -->
+        <section id="art" class="py-16 bg-gray-50">
+          <div class="max-w-6xl mx-auto px-6">
+            <!-- Section Title -->
+            <div class="text-center mb-12">
+              <h2 class="text-3xl font-bold text-gray-800">🎨 Art & Design</h2>
+              <p class="text-gray-600 mt-2"></p>
+            </div>
+
+            <!-- Card Wrapper -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+              <!-- Card -->
+              <div
+                class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition"
+              >
+                <img
+                  src="assets/images/art/crash_trash.png"
+                  alt="3D models"
+                  class="w-full h-48 object-cover"
+                />
+                <div class="p-4">
+                  <p class="text-gray-700 text-sm font-medium">
+                    Your spaceship wasn’t designed to fight aliens. It was designed to fight… floating garbage. Good luck, champ!
+                  </p>
+                </div>
+              </div>
+
+              <!-- Card -->
+              <div
+                class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition"
+              >
+                <img
+                  src="assets/images/art/campaign_trail.png"
+                  alt="2D Assets"
+                  class="w-full h-48 object-cover"
+                />
+                <div class="p-4">
+                  <p class="text-gray-700 text-sm font-medium">
+                    A collaborative role-playing experience about saving a presidency in a failing democracy!
+                  </p>
+                </div>
+              </div>
+
+              <!-- Card -->
+              <div
+                class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition"
+              >
+                <img
+                  src="assets/images/art/you_were_here.png"
+                  alt="2D Map"
+                  class="w-full h-48 object-cover"
+                />
+                <div class="p-4">
+                  <p class="text-gray-700 text-sm font-medium">
+                    An interactive poem about presence, decay, and renewal.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Card -->
+              <div
+                class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition"
+              >
+                <img
+                  src="assets/images/art/alienfluencer.png"
+                  alt="2D Cards"
+                  class="w-full h-48 object-cover"
+                />
+                <div class="p-4">
+                  <p class="text-gray-700 text-sm font-medium">
+                    Alienfluencer
+                  </p>
+                </div>
+              </div>
+
+              <!-- Card -->
+              <div
+                class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition"
+              >
+                <img
+                  src="assets/images/art/hopawt.png"
+                  alt="Artwork"
+                  class="w-full h-48 object-cover"
+                />
+                <div class="p-4">
+                  <p class="text-gray-700 text-sm font-medium">
+                    Hotpot game
+                  </p>
+                </div>
+              </div>
+
+              <!-- Card -->
+              <div
+                class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition"
+              >
+                <img
+                  src="assets/images/art/pirate_puncture.png"
+                  alt="Inktober Sketches"
+                  class="w-full h-48 object-cover"
+                />
+                <div class="p-4">
+                  <p class="text-gray-700 text-sm font-medium">
+                   Pirate Puncture
+                  </p>
+                </div>
+              </div>
+
+              <!-- Card -->
+              <div
+                class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition"
+              >
+                <img
+                  src="assets/images/art/patogotchi.png"
+                  alt="T-shirt Design"
+                  class="w-full h-48 object-cover"
+                />
+                <div class="p-4">
+                  <p class="text-gray-700 text-sm font-medium">
+                   Your very own pocket duck!
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Behance Link -->
+            <div class="text-center mt-8">
+              <p class="text-gray-700">
+                For more:
                 <a
-                  href="https://drive.google.com/file/d/10vu7HyCQjx_-XTTwEz0GGQomZPynV6Gs/view?usp=sharing"
+                  href="https://www.behance.net/roboshamit?isa0=1"
                   target="_blank"
+                  class="text-green-600 font-medium hover:underline"
                 >
-                  Gamecraft: A Workshop for Aspiring Developers by AUST IDC
+                  https://uswahsaeed.itch.io/
                 </a>
               </p>
+            </div>
+          </div>
+        </section>
+        <!-- End Art Section -->
 
-              <p class="text-sm text-gray-600 mt-2">
-                Instructed a 2 hour online workshop for 100+ students discussing
-                the complete workflow of a game's design, development and
-                release.
-                <br /><br />
-                Topics such as game industry and team diversities, tools, level
-                designing, game programming, tips for beginners, game balancing
-                and analysis, game research, testing and debugging, publishing,
-                monetization, learning resources, higher education and career
-                opportunities, etc were discussed.
+        <!-- Recommendation -->
+        <section id="recommsc" class="py-16 bg-gray-50">
+          <div class="container mx-auto px-4">
+            <div class="text-center mb-10">
+              <h2 class="text-3xl font-bold">📢 Recommendations</h2>
+            </div>
+
+            <div class="relative w-full max-w-6xl mx-auto overflow-hidden">
+              <!-- Slides -->
+              <div id="carousel" class="flex transition-transform duration-700">
+                <!-- Item 1 -->
+                <div class="w-full flex-shrink-0 text-center px-6">
+                  <img
+                    src="assets/images/recomm/shafeyee.jpeg"
+                    class="w-24 h-24 rounded-full mx-auto mb-4"
+                  />
+                  <p class="text-gray-700 mb-4">
+                    Uswah Saeed is an outstanding Game Developer with expertise in
+                    Hyper and Hybrid casual games...
+                  </p>
+                  <h4 class="font-semibold">Syed Shafeyee</h4>
+                  <h6 class="text-gray-500 text-sm">
+                    Solutions Engineer @ Google (Former Colleague)
+                  </h6>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="w-full flex-shrink-0 text-center px-6">
+                  <img
+                    src="assets/images/recomm/mahmud.jpeg"
+                    class="w-24 h-24 rounded-full mx-auto mb-4"
+                  />
+                  <p class="text-gray-700 mb-4">
+                    During his tenure as a Senior Game Developer at Playense,
+                    Uswah consistently impressed...
+                  </p>
+                  <h4 class="font-semibold">Mahmudur Rahman</h4>
+                  <h6 class="text-gray-500 text-sm">
+                    Founder @ Playense (Former Boss)
+                  </h6>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="w-full flex-shrink-0 text-center px-6">
+                  <img
+                    src="assets/images/recomm/minhaz.jpeg"
+                    class="w-24 h-24 rounded-full mx-auto mb-4"
+                  />
+                  <p class="text-gray-700 mb-4">
+                    Uswah is a passionate and highly driven game developer with
+                    a very good sense of what makes a great game...
+                  </p>
+                  <h4 class="font-semibold">Minhazul Arefin Abtahi</h4>
+                  <h6 class="text-gray-500 text-sm">
+                    Software Developer @ Crapsee Corp (Former Colleague)
+                  </h6>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="w-full flex-shrink-0 text-center px-6">
+                  <img
+                    src="assets/images/recomm/moien.jpeg"
+                    class="w-24 h-24 rounded-full mx-auto mb-4"
+                  />
+                  <p class="text-gray-700 mb-4">
+                    I had the pleasure of sitting beside & working closely with
+                    Uswah on several Unity 3D game development projects...
+                  </p>
+                  <h4 class="font-semibold">Moien Mahnul</h4>
+                  <h6 class="text-gray-500 text-sm">
+                    Game Designer @ Riseup Labs (Former Colleague)
+                  </h6>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="w-full flex-shrink-0 text-center px-6">
+                  <img
+                    src="assets/images/recomm/sakib.jpeg"
+                    class="w-24 h-24 rounded-full mx-auto mb-4"
+                  />
+                  <p class="text-gray-700 mb-4">
+                    Uswah Saeed is a unique game developer who gets hands on
+                    with the projects he is involved in...
+                  </p>
+                  <h4 class="font-semibold">MD Alium Basir Sakib</h4>
+                  <h6 class="text-gray-500 text-sm">
+                    Sr. Game Developer @ Free Pixel Games Ltd. (Former
+                    Colleague)
+                  </h6>
+                </div>
+              </div>
+
+              <!-- Controls -->
+              <button
+                id="prev"
+                class="absolute left-0 top-1/2 -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
+              >
+                ❮
+              </button>
+              <button
+                id="next"
+                class="absolute right-0 top-1/2 -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
+              >
+                ❯
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <footer class="bg-gray-900 text-gray-300 py-10">
+          <div
+            class="max-w-7xl mx-auto px-6 flex flex-wrap justify-between gap-8"
+          >
+            <!-- Logo & About -->
+            <div class="basis-1/3">
+              <h2 class="text-2xl font-bold text-white">Uswah Saeed</h2>
+              <p class="mt-3 text-gray-400 text-sm">
+                Engaging video games, immersive-interactive multimedia and
+                breathtaking art of various forms have always been my motivation
+                to achieve more.
               </p>
+            </div>
 
-              <!-- Buttons -->
-              <div class="mt-4 flex items-center gap-2 flex-wrap">
-                <a
-                  href="https://www.facebook.com/events/2414224025452134/?active_tab=discussion"
-                  target="_blank"
-                  class="bg-green-600 text-white text-sm px-4 py-1 rounded hover:bg-green-700 transition"
+            <!-- Quick Links -->
+
+            <!-- Social Media -->
+            <div class="flex space-x-6">
+              <a
+                href="https://www.linkedin.com/in/uswah-saeed/"
+                target="_blank"
+                class="text-gray-400 hover:text-white transition"
+              >
+                <!-- LinkedIn Icon -->
+                <svg
+                  class="w-6 h-6 fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
                 >
-                  Event
-                </a>
-
-                <span
-                  class="border border-black rounded px-2 py-0.5 text-xs text-gray-700"
-                >
-                  Workshop
-                </span>
-                <span
-                  class="border border-black rounded px-2 py-0.5 text-xs text-gray-700"
-                >
-                  2024
-                </span>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:shadow-xl transition-transform duration-300 hover:scale-105"
-          >
-            <!-- Image -->
-            <a
-              href="CampSajek.html"
-              target="_blank"
-              class="block overflow-hidden"
-            >
-              <img
-                src="assets/images/campsajek.png"
-                alt="Camp Sajek"
-                class="w-[320px] h-[185px] object-cover rounded-md mx-auto"
-              />
-            </a>
-
-            <!-- Title -->
-            <p class="mt-3 text-lg font-semibold text-gray-800 text-center">
-              <a
-                href="CampSajek.html"
-                target="_blank"
-                class="hover:text-green-600"
-              >
-                Board Game Design: Camp Sajek
-              </a>
-            </p>
-
-            <!-- Description -->
-            <div class="px-4 py-2">
-              <p class="text-sm text-gray-600 text-left mb-2">
-                Camp Sajek is a 2-4 player board game that takes players on a
-                relaxing yet exhilarating expedition through the magical land of
-                Sajek Valley in Bangladesh.
-              </p>
-              <p class="text-sm text-gray-600 text-left mb-2">
-                However, even an enjoyable task such as camping can call for
-                different difficulties and therefore, the goal of the players is
-                to maximize their happiness levels and to make everyone’s
-                experience as relaxing as possible throughout the whole journey
-                by tackling those difficulties working as a team while getting
-                to know about Bangladesh and its local culture and cuisine.
-              </p>
-            </div>
-
-            <!-- Buttons & Tags -->
-            <div class="px-4 pb-4 flex flex-wrap items-center gap-2">
-              <a
-                href="CampSajek.html"
-                target="_blank"
-                class="bg-green-600 text-white text-sm px-4 py-1 rounded-md hover:bg-green-700 transition"
-              >
-                Read
-              </a>
-              <span
-                class="border border-black rounded-md px-2 py-0.5 text-xs text-gray-600"
-              >
-                Aalto Admission Assignment
-              </span>
-              <span
-                class="border border-black rounded-md px-2 py-0.5 text-xs text-gray-600"
-              >
-                2023
-              </span>
-            </div>
-          </div>
-
-          <div
-            class="bg-white rounded-lg shadow-md p-4 transform transition duration-300 hover:scale-105 hover:shadow-xl"
-          >
-            <!-- Image -->
-            <a href="TidalQuest.html" target="_blank">
-              <img
-                src="assets/images/tidal.png"
-                alt="Tidal Quest"
-                class="h-[185px] w-[320px] object-cover rounded-md mx-auto"
-              />
-            </a>
-
-            <!-- Title -->
-            <p class="mt-3 text-lg font-semibold text-black">
-              <a href="TidalQuest.html" target="_blank" class="hover:underline"
-                >Game Design: Tidal Quest</a
-              >
-            </p>
-
-            <!-- Description -->
-            <p class="text-sm text-black text-left mt-2">
-              GDD for an isometric, action-exploration game where you dive deep
-              on a quest of saving sea creatures, only to unravel deeper
-              conspiracies.
-            </p>
-
-            <!-- Buttons -->
-            <div class="mt-3">
-              <a
-                href="TidalQuest.html"
-                target="_blank"
-                class="bg-green-600 text-white px-4 py-1.5 rounded-md text-base font-medium hover:bg-green-700 transition"
-              >
-                Read
-              </a>
-            </div>
-
-            <!-- Tags -->
-            <div class="mt-3 space-x-2">
-              <span
-                class="border border-black text-black text-xs px-2 py-1 rounded-md inline-block"
-                >Game Design</span
-              >
-              <span
-                class="border border-black text-black text-xs px-2 py-1 rounded-md inline-block"
-                >2024</span
-              >
-            </div>
-          </div>
-
-          <div
-            class="bg-white rounded-lg shadow-md p-4 transform transition duration-300 hover:scale-105 hover:shadow-xl"
-          >
-            <!-- Image -->
-            <a href="UndergradThesis.html" target="_blank">
-              <img
-                src="assets/images/thesis.png"
-                alt="BSc Thesis"
-                class="h-[185px] w-[320px] object-cover rounded-md mx-auto"
-              />
-            </a>
-
-            <!-- Title -->
-            <p class="mt-3 text-lg font-semibold text-black">
-              <a
-                href="UndergradThesis.html"
-                target="_blank"
-                class="hover:underline"
-              >
-                BSc Thesis: Automatic Human Brain Segmentation using ML
-                Techniques
-              </a>
-            </p>
-
-            <!-- Description -->
-            <p class="text-sm text-black text-left mt-2">
-              Undergrad thesis where I classified brain tracts from whole brain
-              data using different supervised machine learning algorithms such
-              as KD Tree, NN &amp; SVM.
-            </p>
-
-            <!-- Button -->
-            <div class="mt-3">
-              <a
-                href="UndergradThesis.html"
-                target="_blank"
-                class="bg-green-600 text-white px-4 py-1.5 rounded-md text-base font-medium hover:bg-green-700 transition"
-              >
-                Read
-              </a>
-            </div>
-
-            <!-- Tags -->
-            <div class="mt-3 space-x-2">
-              <span
-                class="border border-black text-black text-xs px-2 py-1 rounded-md inline-block"
-                >Thesis</span
-              >
-              <span
-                class="border border-black text-black text-xs px-2 py-1 rounded-md inline-block"
-                >2019</span
-              >
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ======= Skills Section ======= -->
-      <section id="skills" class="py-16 bg-gray-50">
-        <div class="container mx-auto px-6">
-          <div class="text-center mb-10">
-            <h2 class="text-3xl font-bold">💪 Proficiency</h2>
-          </div>
-
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-            <!-- Programming -->
-            <div>
-              <h3 class="text-xl font-semibold mb-4">Programming</h3>
-              <ul class="space-y-3">
-                <li class="bg-white shadow rounded px-4 py-2">C</li>
-                <li class="bg-white shadow rounded px-4 py-2">C#</li>
-                <li class="bg-white shadow rounded px-4 py-2">Blueprint</li>
-                <li class="bg-white shadow rounded px-4 py-2">C++</li>
-                <li class="bg-white shadow rounded px-4 py-2">Python</li>
-                <li class="bg-white shadow rounded px-4 py-2">Java</li>
-                <li class="bg-white shadow rounded px-4 py-2">SQL</li>
-                <li class="bg-white shadow rounded px-4 py-2">JS</li>
-                <li class="bg-white shadow rounded px-4 py-2">PHP</li>
-                <li class="bg-white shadow rounded px-4 py-2">HTML, CSS</li>
-              </ul>
-            </div>
-
-            <!-- Languages -->
-            <div>
-              <h3 class="text-xl font-semibold mb-4">Languages</h3>
-
-              <!-- English -->
-              <div class="mb-5">
-                <div class="flex justify-between mb-1">
-                  <span class="font-medium">🇬🇧 English</span>
-                  <span class="text-sm text-gray-600"
-                    >IELTS Academic 7.5/9</span
-                  >
-                </div>
-                <div class="w-full bg-gray-200 rounded-full h-3">
-                  <div
-                    class="bg-green-500 h-3 rounded-full"
-                    style="width: 80%"
-                  ></div>
-                </div>
-              </div>
-
-              <!-- Finnish -->
-              <div class="mb-5">
-                <div class="flex justify-between mb-1">
-                  <span class="font-medium">🇫🇮 Finnish</span>
-                  <span class="text-sm text-gray-600">Finnish 1 Course</span>
-                </div>
-                <div class="w-full bg-gray-200 rounded-full h-3">
-                  <div
-                    class="bg-blue-500 h-3 rounded-full"
-                    style="width: 80%"
-                  ></div>
-                </div>
-              </div>
-
-              <!-- Bangla -->
-              <div class="mb-5">
-                <div class="flex justify-between mb-1">
-                  <span class="font-medium">🇧🇩 Bangla</span>
-                  <span class="text-sm text-gray-600">Native Language</span>
-                </div>
-                <div class="w-full bg-gray-200 rounded-full h-3">
-                  <div
-                    class="bg-yellow-500 h-3 rounded-full"
-                    style="width: 100%"
-                  ></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Skills Section -->
-
-      <!-- ======= Tools Section ======= -->
-      <section id="tools" class="py-16 bg-gray-50">
-        <div class="container mx-auto px-6">
-          <div class="text-center mb-10">
-            <h2 class="text-3xl font-bold">🔧 Tools</h2>
-          </div>
-
-          <!-- First Row -->
-          <div
-            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mb-12"
-          >
-            <!-- Unity -->
-            <div
-              class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition"
-            >
-              <img
-                src="assets/images/unity.png"
-                alt="Unity"
-                class="w-16 h-16 mx-auto"
-              />
-              <h4 class="mt-4 text-lg font-semibold text-center">Unity</h4>
-              <p class="mt-2 text-sm text-gray-600 text-center">
-                Primary game engine used to create over 50+ games and prototypes
-                since 2016. Developed for PC, Android, iOS, Web, Playable Ads,
-                and Meta Quest.
-              </p>
-            </div>
-
-            <!-- Unreal Engine -->
-            <div
-              class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition"
-            >
-              <img
-                src="assets/images/unreal.png"
-                alt="Unreal Engine"
-                class="w-16 h-16 mx-auto bg-black"
-              />
-              <h4 class="mt-4 text-lg font-semibold text-center">
-                Unreal Engine
-              </h4>
-              <p class="mt-2 text-sm text-gray-600 text-center">
-                Basic understanding of UE editor & blueprints. Implemented
-                mechanics, backend, and UI for "Thoughts Out" using Unreal 5.
-              </p>
-            </div>
-
-            <!-- Blender -->
-            <div
-              class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition"
-            >
-              <img
-                src="assets/images/blender.png"
-                alt="Blender"
-                class="w-20 h-16 mx-auto"
-              />
-              <h4 class="mt-4 text-lg font-semibold text-center">Blender 3D</h4>
-              <p class="mt-2 text-sm text-gray-600 text-center">
-                Enjoy creating low-poly 3D game assets and sometimes 3D printing
-                them too!
-              </p>
-            </div>
-
-            <!-- Adobe Illustrator -->
-            <div
-              class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition"
-            >
-              <img
-                src="assets/images/adobe.png"
-                alt="Adobe"
-                class="w-16 h-16 mx-auto"
-              />
-              <h4 class="mt-4 text-lg font-semibold text-center">
-                Adobe Illustrator
-              </h4>
-              <p class="mt-2 text-sm text-gray-600 text-center">
-                Using since 2016 for 2D assets, UI, textures, logos, banners,
-                and character art.
-              </p>
-            </div>
-
-            <!-- Github -->
-            <div
-              class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition"
-            >
-              <img
-                src="assets/images/github.png"
-                alt="Github"
-                class="w-16 h-16 mx-auto rounded-full bg-black"
-              />
-              <h4 class="mt-4 text-lg font-semibold text-center">Github</h4>
-              <p class="mt-2 text-sm text-gray-600 text-center">
-                Using GitHub Desktop & SourceTree for version control,
-                collaboration, and cloud hosting. Also familiar with Git CLI.
-              </p>
-            </div>
-
-            <!-- Visual Studio -->
-            <div
-              class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition"
-            >
-              <img
-                src="assets/images/vs.png"
-                alt="Visual Studio"
-                class="w-16 h-16 mx-auto"
-              />
-              <h4 class="mt-4 text-lg font-semibold text-center">
-                Visual Studio
-              </h4>
-              <p class="mt-2 text-sm text-gray-600 text-center">
-                Primary IDE for C# development. Also use VS Code for lightweight
-                projects.
-              </p>
-            </div>
-
-            <!-- Jupyter Notebook -->
-            <div
-              class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition"
-            >
-              <img
-                src="assets/images/jup.png"
-                alt="Jupyter"
-                class="w-16 h-16 mx-auto"
-              />
-              <h4 class="mt-4 text-lg font-semibold text-center">
-                Jupyter Notebook
-              </h4>
-              <p class="mt-2 text-sm text-gray-600 text-center">
-                IDE for Python development. Also use Google Colab depending on
-                the project.
-              </p>
-            </div>
-
-            <!-- Slack -->
-            <div
-              class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition"
-            >
-              <img
-                src="assets/images/slack.png"
-                alt="Slack"
-                class="w-16 h-16 mx-auto"
-              />
-              <h4 class="mt-4 text-lg font-semibold text-center">Slack</h4>
-              <p class="mt-2 text-sm text-gray-600 text-center">
-                Use Slack, Discord, Teams, Zoom, and Skype for team
-                communication.
-              </p>
-            </div>
-
-            <!-- Jira -->
-            <div
-              class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition"
-            >
-              <img
-                src="assets/images/jira.png"
-                alt="Jira"
-                class="w-16 h-16 mx-auto"
-              />
-              <h4 class="mt-4 text-lg font-semibold text-center">Jira</h4>
-              <p class="mt-2 text-sm text-gray-600 text-center">
-                Experienced with Jira, Trello, and Miro for task management.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Tools Section -->
-
-      <!-- Art Section -->
-      <section id="art" class="py-16 bg-gray-50">
-        <div class="max-w-6xl mx-auto px-6">
-          <!-- Section Title -->
-          <div class="text-center mb-12">
-            <h2 class="text-3xl font-bold text-gray-800">🎨 Art & Design</h2>
-            <p class="text-gray-600 mt-2"></p>
-          </div>
-
-          <!-- Card Wrapper -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-            <!-- Card -->
-            <div
-              class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition"
-            >
-              <img
-                src="assets/images/art/3d.png"
-                alt="3D models"
-                class="w-full h-48 object-cover"
-              />
-              <div class="p-4">
-                <p class="text-gray-700 text-sm font-medium">
-                  3D models made in Blender
-                </p>
-              </div>
-            </div>
-
-            <!-- Card -->
-            <div
-              class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition"
-            >
-              <img
-                src="assets/images/art/2d.png"
-                alt="2D Assets"
-                class="w-full h-48 object-cover"
-              />
-              <div class="p-4">
-                <p class="text-gray-700 text-sm font-medium">
-                  2D Assets made in Adobe Illustrator
-                </p>
-              </div>
-            </div>
-
-            <!-- Card -->
-            <div
-              class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition"
-            >
-              <img
-                src="assets/images/art/sajekmap.png"
-                alt="2D Map"
-                class="w-full h-48 object-cover"
-              />
-              <div class="p-4">
-                <p class="text-gray-700 text-sm font-medium">
-                  2D Map of a Board Game made in Adobe Illustrator
-                </p>
-              </div>
-            </div>
-
-            <!-- Card -->
-            <div
-              class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition"
-            >
-              <img
-                src="assets/images/art/sajek.png"
-                alt="2D Cards"
-                class="w-full h-48 object-cover"
-              />
-              <div class="p-4">
-                <p class="text-gray-700 text-sm font-medium">
-                  2D Cards of a Board Game made in Adobe Illustrator
-                </p>
-              </div>
-            </div>
-
-            <!-- Card -->
-            <div
-              class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition"
-            >
-              <img
-                src="assets/images/art/rashed.png"
-                alt="Artwork"
-                class="w-full h-48 object-cover"
-              />
-              <div class="p-4">
-                <p class="text-gray-700 text-sm font-medium">
-                  2D Artwork for "My Friend Rashed"
-                </p>
-              </div>
-            </div>
-
-            <!-- Card -->
-            <div
-              class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition"
-            >
-              <img
-                src="assets/images/art/ink.png"
-                alt="Inktober Sketches"
-                class="w-full h-48 object-cover"
-              />
-              <div class="p-4">
-                <p class="text-gray-700 text-sm font-medium">
-                  Daily Sketches Inktober 2021
-                </p>
-              </div>
-            </div>
-
-            <!-- Card -->
-            <div
-              class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition"
-            >
-              <img
-                src="assets/images/art/mind.png"
-                alt="T-shirt Design"
-                class="w-full h-48 object-cover"
-              />
-              <div class="p-4">
-                <p class="text-gray-700 text-sm font-medium">
-                  T-Shirt Design which has been worn by 1000+ students!
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Behance Link -->
-          <div class="text-center mt-8">
-            <p class="text-gray-700">
-              For more:
-              <a
-                href="https://www.behance.net/roboshamit?isa0=1"
-                target="_blank"
-                class="text-green-600 font-medium hover:underline"
-              >
-                Behance Portfolio
-              </a>
-            </p>
-          </div>
-        </div>
-      </section>
-      <!-- End Art Section -->
-
-      <!-- Recommendation -->
-      <section id="recommsc" class="py-16 bg-gray-50">
-        <div class="container mx-auto px-4">
-          <div class="text-center mb-10">
-            <h2 class="text-3xl font-bold">📢 Recommendations</h2>
-          </div>
-
-          <div class="relative w-full max-w-6xl mx-auto overflow-hidden">
-            <!-- Slides -->
-            <div id="carousel" class="flex transition-transform duration-700">
-              <!-- Item 1 -->
-              <div class="w-full flex-shrink-0 text-center px-6">
-                <img
-                  src="assets/images/recomm/shafeyee.jpeg"
-                  class="w-24 h-24 rounded-full mx-auto mb-4"
-                />
-                <p class="text-gray-700 mb-4">
-                  Shamit is an outstanding Game Developer with expertise in
-                  Hyper and Hybrid casual games...
-                </p>
-                <h4 class="font-semibold">Syed Shafeyee</h4>
-                <h6 class="text-gray-500 text-sm">
-                  Solutions Engineer @ Google (Former Colleague)
-                </h6>
-              </div>
-
-              <!-- Item 2 -->
-              <div class="w-full flex-shrink-0 text-center px-6">
-                <img
-                  src="assets/images/recomm/mahmud.jpeg"
-                  class="w-24 h-24 rounded-full mx-auto mb-4"
-                />
-                <p class="text-gray-700 mb-4">
-                  During his tenure as a Senior Game Developer at Playense,
-                  Shamit consistently impressed...
-                </p>
-                <h4 class="font-semibold">Mahmudur Rahman</h4>
-                <h6 class="text-gray-500 text-sm">
-                  Founder @ Playense (Former Boss)
-                </h6>
-              </div>
-
-              <!-- Item 3 -->
-              <div class="w-full flex-shrink-0 text-center px-6">
-                <img
-                  src="assets/images/recomm/minhaz.jpeg"
-                  class="w-24 h-24 rounded-full mx-auto mb-4"
-                />
-                <p class="text-gray-700 mb-4">
-                  Shamit is a passionate and highly driven game developer with a
-                  very good sense of what makes a great game...
-                </p>
-                <h4 class="font-semibold">Minhazul Arefin Abtahi</h4>
-                <h6 class="text-gray-500 text-sm">
-                  Software Developer @ Crapsee Corp (Former Colleague)
-                </h6>
-              </div>
-
-              <!-- Item 4 -->
-              <div class="w-full flex-shrink-0 text-center px-6">
-                <img
-                  src="assets/images/recomm/moien.jpeg"
-                  class="w-24 h-24 rounded-full mx-auto mb-4"
-                />
-                <p class="text-gray-700 mb-4">
-                  I had the pleasure of sitting beside & working closely with
-                  Shamit on several Unity 3D game development projects...
-                </p>
-                <h4 class="font-semibold">Moien Mahnul</h4>
-                <h6 class="text-gray-500 text-sm">
-                  Game Designer @ Riseup Labs (Former Colleague)
-                </h6>
-              </div>
-
-              <!-- Item 5 -->
-              <div class="w-full flex-shrink-0 text-center px-6">
-                <img
-                  src="assets/images/recomm/sakib.jpeg"
-                  class="w-24 h-24 rounded-full mx-auto mb-4"
-                />
-                <p class="text-gray-700 mb-4">
-                  Shamit Ahmed is a unique game developer who gets hands on with
-                  the projects he is involved in...
-                </p>
-                <h4 class="font-semibold">MD Alium Basir Sakib</h4>
-                <h6 class="text-gray-500 text-sm">
-                  Sr. Game Developer @ Free Pixel Games Ltd. (Former Colleague)
-                </h6>
-              </div>
-            </div>
-
-            <!-- Controls -->
-            <button
-              id="prev"
-              class="absolute left-0 top-1/2 -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
-            >
-              ❮
-            </button>
-            <button
-              id="next"
-              class="absolute right-0 top-1/2 -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
-            >
-              ❯
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <footer class="bg-gray-900 text-gray-300 py-10">
-        <div
-          class="max-w-7xl mx-auto px-6 flex flex-wrap justify-between gap-8"
-        >
-          <!-- Logo & About -->
-          <div class="basis-1/3">
-            <h2 class="text-2xl font-bold text-white">Shamit Ahmad</h2>
-            <p class="mt-3 text-gray-400 text-sm">
-              Engaging video games, immersive-interactive multimedia and
-              breathtaking art of various forms have always been my motivation
-              to achieve more.
-            </p>
-          </div>
-
-          <!-- Quick Links -->
-
-          <!-- Social Media -->
-          <div class="flex space-x-6">
-            <a
-              href="https://www.linkedin.com/in/shamitahmed/"
-              target="_blank"
-              class="text-gray-400 hover:text-white transition"
-            >
-              <!-- LinkedIn Icon -->
-              <svg
-                class="w-6 h-6 fill-current"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 
+                  <path
+                    d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 
             5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 
             19h-3v-10h3v10zm-1.5-11.29c-.97 
             0-1.75-.79-1.75-1.75s.78-1.75 
@@ -2044,23 +1857,43 @@
             0-2.16 1.46-2.16 2.97v5.7h-3v-10h2.88v1.36h.04c.4-.76 
             1.38-1.55 2.84-1.55 3.04 0 3.6 
             2 3.6 4.59v5.6z"
-                />
-              </svg>
-            </a>
+                  />
+                </svg>
+              </a>
 
-            <a
-              href="https://www.youtube.com/@shamitahmed/videos"
-              target="_blank"
-              class="text-gray-400 hover:text-white transition"
-            >
-              <!-- YouTube Icon -->
-              <svg
-                class="w-6 h-6 fill-current"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
+              <a
+                href="https://uswahsaeed.itch.io/"
+                target="_blank"
+                class="text-gray-400 hover:text-white transition"
               >
-                <path
-                  d="M19.615 3.184c.872.23 1.556.91 
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M13.828 10.172a4 4 0 010 5.656l-1.414 1.414a4 4 0 01-5.656-5.656l1.414-1.414M10.172 13.828a4 4 0 010-5.656l1.414-1.414a4 4 0 015.656 5.656l-1.414 1.414"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.youtube.com/@shamitahmed/videos"
+                target="_blank"
+                class="text-gray-400 hover:text-white transition"
+              >
+                <!-- YouTube Icon -->
+                <svg
+                  class="w-6 h-6 fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19.615 3.184c.872.23 1.556.91 
             1.784 1.783.421 1.635.421 5.033.421 
             5.033s0 3.398-.421 5.033c-.228.873-.912 
             1.553-1.784 1.783-1.58.421-7.615.421-7.615.421s-6.035 
@@ -2068,23 +1901,23 @@
             1.784-1.783 1.58-.421 7.615-.421 
             7.615-.421s6.035 0 7.615.421zm-10.615 
             4.816v6l5.5-3-5.5-3z"
-                />
-              </svg>
-            </a>
+                  />
+                </svg>
+              </a>
 
-            <a
-              href="https://github.com/shamitahmed"
-              target="_blank"
-              class="text-gray-400 hover:text-white transition"
-            >
-              <!-- GitHub Icon -->
-              <svg
-                class="w-6 h-6 fill-current"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
+              <a
+                href="https://github.com/shamitahmed"
+                target="_blank"
+                class="text-gray-400 hover:text-white transition"
               >
-                <path
-                  d="M12 .297c-6.63 
+                <!-- GitHub Icon -->
+                <svg
+                  class="w-6 h-6 fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 .297c-6.63 
             0-12 5.373-12 12 0 5.303 3.438 
             9.8 8.205 11.385.6.113.82-.258.82-.577 
             0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.089-.745.083-.729.083-.729 
@@ -2103,19 +1936,20 @@
             0 .315.21.69.825.57 4.765-1.585 
             8.2-6.082 8.2-11.385 
             0-6.627-5.373-12-12-12z"
-                />
-              </svg>
-            </a>
+                  />
+                </svg>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <!-- Bottom -->
-        <div
-          class="border-t border-gray-700 mt-8 pt-6 text-center text-sm text-gray-500 text-2xl"
-        >
-          © 2025 Uswah Saeed. All rights reserved.
-        </div>
-      </footer>
+          <!-- Bottom -->
+          <div
+            class="border-t border-gray-700 mt-8 pt-6 text-center text-sm text-gray-500 text-2xl"
+          >
+            © 2025 Uswah Saeed. All rights reserved.
+          </div>
+        </footer>
+      </main>
     </main>
 
     <script>

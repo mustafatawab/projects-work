@@ -19,3 +19,8 @@ const makeWaveSpans = (str, offset = 0) => {
 
 
   console.log('Script file is runnign ')
+
+
+  function showMobileNav(){
+    console.log("Mobile views")
+  }
