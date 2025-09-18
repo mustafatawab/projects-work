@@ -1,0 +1,77 @@
+.navbar {
+  transition: background-color 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: #0a192f !important;
+}
+
+/* Handle mobile dropdown background */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: #0a192f;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 0.5rem;
+  }
+
+  .dropdown-menu {
+    background-color: rgba(10, 25, 47, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .dropdown-item {
+    color: white;
+  }
+
+  .dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+  }
+}
+
+/* Logo size adjustment */
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+/* Show dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Optional: Add a fade-in effect for the dropdown */
+.dropdown-menu {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+}
+
+.nav-dropdown-link-line {
+  background-color: #006daa;
+  width: 25px;
+  height: 2px;
+  margin-right: 15px;
+  display: inline-block;
+}
+
+.dropdown-item {
+  color: #000000 !important;
+}
+
+.dropdown-item:hover {
+  color: #006daa !important;
+}
+
+.drop-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+}
