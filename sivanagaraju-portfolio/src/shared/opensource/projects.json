@@ -1,0 +1,76 @@
+{
+  "data": [
+    {
+      "id": "proj-001",
+      "name": "Game Theory Simulation - Prisoner's Dilemma",
+      "createdAt": "2024-08-01T00:00:00Z",
+      "url": "https://github.com/your-username/game-theory-simulator",
+      "description": "Developed a multi-strategy simulator in Java for decision-making scenarios. Modeled strategic behaviors and outcomes in repeated iterations.",
+      "forkCount": 0,
+      "stargazers": {
+        "totalCount": 0
+      },
+      "languages": [
+        {
+          "name": "Java",
+          "iconifyClass": "logos-java"
+        }
+      ]
+    },
+    {
+      "id": "proj-002",
+      "name": "VMware Server Consolidation Project",
+      "createdAt": "2024-02-01T00:00:00Z",
+      "url": "https://github.com/your-username/vmware-server-consolidation",
+      "description": "Led the migration of legacy physical servers into a centralized VMware ESXi environment to improve system efficiency and manageability. Designed and implemented a virtualized infrastructure using shared storage and High Availability (HA) configuration. Configured vSwitches, VM templates, and storage policies to streamline deployment and maintenance. Documented the migration and conducted training for system admins.",
+      "forkCount": 0,
+      "stargazers": {
+        "totalCount": 0
+      },
+      "languages": [
+        {
+          "name": "Shell",
+          "iconifyClass": "logos-bash"
+        }
+      ]
+    },
+    {
+      "id": "proj-003",
+      "name": "Cloud-Based Database Integration Project",
+      "createdAt": "2024-08-01T00:00:00Z",
+      "url": "https://github.com/your-username/cloud-db-integration",
+      "description": "Analyzed the adoption and impact of cloud-based databases in business environments. Case studies on Amazon RDS, Google BigQuery, and MongoDB Atlas. Assessed scalability, security, and compliance of cloud-native vs. traditional systems. Delivered a comprehensive research paper with industry recommendations.",
+      "forkCount": 0,
+      "stargazers": {
+        "totalCount": 0
+      },
+      "languages": [
+        {
+          "name": "Markdown",
+          "iconifyClass": "vscode-icons:file-type-markdown"
+        }
+      ]
+    },
+    {
+      "id": "proj-004",
+      "name": "Predictive Maintenance Model | Java & AWS Lambda",
+      "createdAt": "2025-01-01T00:00:00Z",
+      "url": "https://github.com/your-username/predictive-maintenance",
+      "description": "Java-based predictive maintenance system using Spring Boot & AWS Lambda. Reduced downtime by 25%. AI-driven analytics for equipment failure prediction. Kafka-based event streaming for real-time data sync. Microservices architecture reduced cloud costs by 15%.",
+      "forkCount": 0,
+      "stargazers": {
+        "totalCount": 0
+      },
+      "languages": [
+        {
+          "name": "Java",
+          "iconifyClass": "logos-java"
+        },
+        {
+          "name": "YAML",
+          "iconifyClass": "vscode-icons:file-type-yaml"
+        }
+      ]
+    }
+  ]
+}
