@@ -188,9 +188,9 @@ function ScrollingImages() {
                     className="font-bold"
                     style={{ color: themeColors.primaryColor }}
                   >
-                    Sachin
+                    Mustafa Tawab
                   </span>{" "}
-                  — a Frontend Developer.
+                  — a Full Stack Developer.
                 </p>
                 <p
                   className="text-sm text-muted leading-relaxed"
