@@ -96,7 +96,7 @@ const Header = () => {
           style={{ color: themeColors.text }}
         >
           <span style={{ color: themeColors.primaryColor }}>{"{ "}</span>
-          Sachin
+          Mustafa Tawab
           <span style={{ color: themeColors.primaryColor }}>{" }"}</span>
         </a>
         {/* Desktop Navigation */}

@@ -1,40 +1,71 @@
 {
   "id": "coding-bundle",
   "subtitle": "I build high-performance, type-safe applications with Next.js and TypeScript. I turn complex data flow challenges into seamless user experiences, delivering 90+ Lighthouse scores and production-ready, stable code.",
-  "badge": "Frontend / MERN Stack </>",
+  "badge": "Full Stack / MERN Stack </>",
   "gradient": "from-green-400 via-cyan-400 to-blue-500",
   "buttonColor": "from-green-500 to-cyan-500",
   "image": "/mustafatawab.png",
   "experience": [
     {
-      "title": " Collaborating with Backend Developer on Client Projects",
-      "location": "Freelance Frontend Developer",
-      "duration": "Jul 2025 - Present",
+      "title": " Lead Frontend Developer - Nodesol Corp",
+      "location": "Near Marhaba Plaza, Mingora Swat, Pakistan",
+      "duration": "July 2024 - July 2025",
       "description": [
         "Delivered 3 production-grade client projects, achieving a 20% reduction in page load times by implementing Next.js optimization techniques, fully type-safe UIs using TypeScript and TanStack Query.",
-        "Partnered with backend developers to integrate complex RESTful APIs, establishing a professional workflow with Husky and ESLint to maintain code consistency."
+        "Partnered with backend developers to integrate complex RESTful APIs and GraphQL APIs, establishing a professional workflow with Husky and ESLint to maintain code consistency."
+      ],
+      "icon": "💻"
+    },
+    {
+      "title": " WordPress Devloper Intern - YODO",
+      "location": "Block D, Johar Town, Lahore, Pakistan",
+      "duration": "Jan 2024 - March 2024",
+      "description": [
+        "Designed websites using custom css and html while using git with the team. Performed wordpress website creation task till deadline. ",
+        "Worked on Wordpress customization using PHP.",
+        "Worked on Lumen API developement."
       ],
       "icon": "💻"
     }
   ],
   "education": [
     {
-      "location": "Dedicated full-time effort to mastering modern technologies with professional coding standards.",
-      "duration": "2024 - Present",
-      "title": "Frontend Specialization & Modern Web Development ",
+      "location": "Full Stack Developement using Latest Modern Web Technologies in Air University Islamabad.",
+      "duration": "2022 - 2023",
+      "title": "Certified Web3 and Metavers Program by PIAIC",
       "icon": "💻"
     },
     {
-      "location": "Bachelor of Computer Applications (BCA)",
-      "duration": "2021 - 2024",
-      "title": "Amity University, Noida",
+      "location": "Online Platform - Agentic AI Development using Latest Agentic AI Frameworks and No-Code Tools",
+      "duration": "4 Months",
+      "title": "Certified Agentic AI Developer by Panaversity",
+      "icon": "🏅"
+    },
+    
+    {
+      "location": "Univerisity of Lahore, Islamabad Campus",
+      "duration": "2019 - 2023",
+      "title": "Bachelor of Software Engineering from University of Lahore",
       "icon": "🎓"
     },
     {
-      "location": "Higher Secondary Certificate",
-      "duration": "End in 2021",
-      "title": "H.S Public School",
+      "location": "Balogram, Swat",
+      "duration": "2017 - 2019",
+      "title": "Intermediate in Pre-Engineering from Govt. High School Balogram",
       "icon": "🏫"
+    },
+
+    {
+      "location": "Online Platform - Learning with Earning",
+      "duration": "A Month",
+      "title": "Web Development",
+      "icon": "🏅"
+    },
+    {
+      "location": "Online Platform - Learning with Earning",
+      "duration": "A Month",
+      "title": "Graphic Designing",
+      "icon": "🏅"
     }
   ],
   "techIcons": [
