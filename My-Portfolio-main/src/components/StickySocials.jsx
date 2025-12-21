@@ -30,6 +30,7 @@ const FloatSocialIcons = () => {
       color: "#1DA1F2",
       url: "https://x.com/mustafatawab05",
     },
+
     {
       icon: FaInstagram,
       name: "Instagram",
