@@ -28,31 +28,31 @@ const FloatSocialIcons = () => {
       icon: FaTwitter,
       name: "Twitter",
       color: "#1DA1F2",
-      url: "",
+      url: "https://x.com/mustafatawab05",
     },
     {
       icon: FaInstagram,
       name: "Instagram",
       color: "#E4405F",
-      url: "",
+      url: "https://www.instagram.com/mustafa.tawab?igsh=MXBtdzE0aXU4bmV1eQ==",
     },
     {
       icon: FaGithub,
       name: "GitHub",
       color: "#181717",
-      url: "https://github.com/SachinPro007",
+      url: "https://github.com/mustafatawab",
     },
     {
       icon: FaLinkedin,
       name: "LinkedIn",
       color: "#0A66C2",
-      url: "https://www.linkedin.com/in/sachinpro/",
+      url: "https://www.linkedin.com/in/mustafa-tawab",
     },
     {
       icon: FaWhatsapp,
       name: "WhatsApp",
       color: "#25D366",
-      url: "https://wa.me/918307326657",
+      url: "https://wa.me/923475300572",
     },
   ];
 
