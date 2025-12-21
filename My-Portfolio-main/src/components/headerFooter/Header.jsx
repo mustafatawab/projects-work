@@ -23,13 +23,10 @@ const Header = () => {
   const [showCustomThemeModal, setShowCustomThemeModal] = useState(false);
   const [customColors, setCustomColors] = useState({});
 
-  
-
   const { themeColors, theme, darkTheme, lightTheme } = useSelector(
     (state) => state.themeReducer
   );
   const dispatch = useDispatch();
-  
 
   const navLinks = [
     { name: "About", href: "#about" },
@@ -64,7 +61,6 @@ const Header = () => {
     document.body.style.overflow = mobileMenuOpen ? "hidden" : "auto";
     return () => (document.body.style.overflow = "auto");
   }, [mobileMenuOpen]);
-
 
   const handleApplyCustomTheme = () => {
     dispatch(
@@ -127,14 +123,14 @@ const Header = () => {
         </nav>
         {/* Action Buttons */}
         <div className="flex items-center gap-4">
-          <a href="/Sachin_Doc.pdf" target="_blank" rel="noopener noreferrer">
+          <a href="/mustafatawab.pdf" target="_blank" rel="noopener noreferrer">
             <button
               className="hidden md:flex items-center gap-2 px-6 py-2 rounded-full font-semibold text-white hover:shadow-lg transition-all duration-300 cursor-pointer"
               style={{
                 background: `linear-gradient(135deg, ${themeColors.primaryColor}, ${themeColors.secondary})`,
               }}
             >
-              Resume{" "}
+              Resume
               <FiDownload className="transition-transform hover:translate-y-0.5" />
             </button>
           </a>
@@ -150,7 +146,13 @@ const Header = () => {
               }}
               aria-label="Theme selector"
             >
-              {theme === "dark" ? <FaSun size={18} /> : theme === "custom" ? <FaPalette size={18} /> : <FaMoon size={18} />}
+              {theme === "dark" ? (
+                <FaSun size={18} />
+              ) : theme === "custom" ? (
+                <FaPalette size={18} />
+              ) : (
+                <FaMoon size={18} />
+              )}
             </button>
 
             <AnimatePresence>
@@ -216,7 +218,7 @@ const Header = () => {
                       onClick={() => {
                         setShowThemeMenu(false);
                         setShowCustomThemeModal(true);
-                        setCustomColors({...themeColors})
+                        setCustomColors({ ...themeColors });
                       }}
                       className="block w-full text-left px-4 py-2 text-sm hover:bg-opacity-10 transition-colors"
                       style={{
