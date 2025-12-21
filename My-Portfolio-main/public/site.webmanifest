@@ -1,12 +1,12 @@
 {
-  "name": "Sachin Sehrawat | Next.js & TypeScript Developer",
-  "short_name": "Sachin",
+  "name": "Mustafa Tawab | Next.js & TypeScript Developer",
+  "short_name": "Mustafa",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#121212", 
-  "theme_color": "#F28C26", 
-  "description": "Portfolio of Sachin Sehrawat — a Next.js/TypeScript Developer building high-performance, type-safe, and secure web applications, specialized in Tailwind CSS and modern full-stack architectures.",
-  "orientation": "portrait",
+  "background_color": "#121212",
+  "theme_color": "#F28C26",
+  "description": "Portfolio of Mustafa Tawab — a Next.js/TypeScript Developer building high-performance, type-safe, and secure web applications, specialized in Tailwind CSS and modern full-stack architectures.",
+  "orientation": "landscape",
   "icons": [
     {
       "src": "/icons/icon-192.png",
