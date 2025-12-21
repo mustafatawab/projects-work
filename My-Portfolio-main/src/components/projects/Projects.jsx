@@ -73,43 +73,69 @@ const projects = [
     projectColor: "#EA580C",
   },
   {
-    title: "ShopEase",
-    subtitle: "E-Commerce Site - Frontend",
+    title: "Portofolio Website",
+    subtitle: "Mustafa - Full Stack Developer",
     description:
-      "Built a blazing-fast eCommerce site from scratch—streamlined product discovery and checkout for a seamless user journey. Achieved 90+ Lighthouse scores with sub-second load times.",
+      "A modern, high-performance portfolio website built with Next.js, TypeScript, and Tailwind CSS, featuring a sleek UI powered by Shadcn UI. Integrated with Contentful CMS for dynamic project management and seamless content updates.",
     tags: [
-      "React",
-      "JavaScript",
-      "Redux Toolkit",
+      "Next.js",
+      "TypeScript",
       "Tailwind CSS",
-      "Material UI",
+      "Shadcn UI",
+      "Contentful",
       "TanStack Query",
       "Axios",
       "React Router",
       "React Toastify",
       "React Slick",
     ],
-    image: "/ecommerce.webp",
-    liveDemo: "https://shopease-ecomm.netlify.app",
-    githubRepo: "https://github.com/SachinPro007/ShopEase_E-Commerce",
-    projectColor: "#d51243",
+    image: "/portfolio.png",
+    liveDemo: "https://mustafatawabb.vercel.app/",
+    githubRepo:
+      "https://github.com/mustafatawab/projects-work/tree/main/My-Portfolio-main",
+    projectColor: "#2563eb",
+  },
+
+  {
+    title: "Myscribe",
+    subtitle: "AI Application for Speach to Text - Nodesol Corp",
+    description:
+      "An AI-powered speech-to-text application where I engineered the entire frontend during my tenure at Nodesol Corp. Developed using Quasar.js, Vue.js, and Bootstrap, the project features robust API integrations and leverages OpenAI models for advanced AI functionality, fully containerized with Docker.",
+    tags: ["Quasar.js", "Vue.js", "Bootstrap", "OpenAI", "Docker"],
+    image: "/myscribe.png",
+    liveDemo: "https://app.myscribe.us/",
+    githubRepo: "#",
+    projectColor: "#2563ea",
   },
   {
-    title: "ClickTask",
-    subtitle: "Employee Task Management",
+    title: "Portfolio Website",
+    subtitle: "Uswah Saeed - Game Designer",
     description:
-      "Built a responsive task management app with role-based dashboards, real-time updates, and smart alerts—all running without a backend. Designed for a smooth UX with dark mode, toast notifications, and polished UI transitions.",
+      "A modern, high-performance portfolio website built with HTML, CSS, Javscript and Tailwind CSS using CDN. Deployed to the vercel",
+    tags: ["html", "css", "javscript", "tailwind css", "cdn", "vercel"],
+    image: "/uswah-saeed-portfolio.png",
+    liveDemo: "https://uswah-saeed.vercel.app/",
+    githubRepo:
+      "https://github.com/mustafatawab/projects-work/tree/main/uswasaeed-portfolio",
+    projectColor: "#5D3FD3",
+  },
+
+  {
+    title: "Gallery Website",
+    subtitle: "Upload Pictures just like a gallery",
+    description:
+      "A modern, high-performance gallery website built with Next.js, TypeScript, and Tailwind CSS, featuring a sleek UI powered by Shadcn UI. Integrated with Contentful CMS for dynamic project management and seamless content updates.",
     tags: [
-      "React",
-      "JavaScript",
+      "Next.js",
+      "TypeScript",
       "Tailwind CSS",
-      "Context APi",
+      "Shadcn UI",
       "React Toastify",
     ],
-    image: "/ems.webp",
-    liveDemo: "https://click-task.netlify.app",
-    githubRepo: "https://github.com/SachinPro007/ClickTask",
-    projectColor: "#2563eb",
+    image: "/user-gallery.png",
+    liveDemo: "https://user-gallery-website.vercel.app/",
+    githubRepo: "https://github.com/mustafatawab/user-gallery-website",
+    projectColor: "#2563ea",
   },
 ];
 
@@ -325,7 +351,7 @@ const ProjectTimeline = () => {
                     border: `1px solid ${themeColors.border}`,
                   }}
                 >
-                  Next.js
+                  Agentic AI
                 </div>
               </motion.div>
             </div>
