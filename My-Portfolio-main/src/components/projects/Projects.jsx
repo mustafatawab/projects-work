@@ -137,6 +137,27 @@ const projects = [
     githubRepo: "https://github.com/mustafatawab/user-gallery-website",
     projectColor: "#2563ea",
   },
+  {
+    title: "Pharmacy Management System",
+    subtitle: "Manage Pharmacy Stocks and Sales",
+    description: 
+      "A comprehensive Pharmacy Management System built with a Next.js and TypeScript frontend, complemented by a FastAPI backend. The application features a sleek UI using Shadcn UI and Tailwind CSS, with React Toastify for notifications. It utilizes Neon DB and PostgreSQL for robust data management, ensuring efficient handling of pharmacy stocks and sales.",
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Shadcn UI",
+      "React Toastify",
+      "react-icons",
+      "fastapi",
+      "neon db",
+      "postgresql",
+    ],
+    image: "/pharmacy_management_system.png",
+    liveDemo: "https://pharmacy-management-system-beta.vercel.app/login",
+    githubRepo: "https://github.com/mustafatawab/pharmacy-management-system",
+    projectColor: "#2b7fff",
+  },
 ];
 
 const ProjectTimeline = () => {
