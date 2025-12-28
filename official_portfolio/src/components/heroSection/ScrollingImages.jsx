@@ -206,14 +206,16 @@ function ScrollingImages() {
           {/* image wraper */}
           <div className="w-full h-full relative">
             <img
-              alt="Sachin - Frontend Developer"
+              alt="Mustafa Tawab - Full Stack Developer"
               src={slide.image}
-              className="absolute top-[58%] left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-              style={{
-                height: `${containerSize * 1.1}px`,
-                width: "auto",
-                maxWidth: "none",
-              }}
+              className="absolute top-[58%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 "
+              // style={
+              //   // {
+              //   // height: `${containerSize * 1.1}px`,
+              //   // width: "auto",
+              //   // maxWidth: "none",
+              //   // }
+              // }
             />
           </div>
         </div>

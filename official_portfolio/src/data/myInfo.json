@@ -4,7 +4,7 @@
   "badge": "Full Stack / MERN Stack </>",
   "gradient": "from-green-400 via-cyan-400 to-blue-500",
   "buttonColor": "from-green-500 to-cyan-500",
-  "image": "/mustafatawab.png",
+  "image": "/mustafatawabb.png",
   "experience": [
     {
       "title": " Lead Frontend Developer - Nodesol Corp",
@@ -41,7 +41,7 @@
       "title": "Certified Agentic AI Developer by Panaversity",
       "icon": "🏅"
     },
-    
+
     {
       "location": "Univerisity of Lahore, Islamabad Campus",
       "duration": "2019 - 2023",
@@ -91,11 +91,11 @@
       "tooltipColor": "#5A29E4"
     },
     {
-      "name": "TanStack Query",
-      "src": "https://raw.githubusercontent.com/TanStack/query/main/media/emblem-light.svg",
+      "name": "TypeScript",
+      "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
       "size": "large",
       "angle": 153,
-      "tooltipColor": "#FF4154"
+      "tooltipColor": "#3178C6"
     },
     {
       "name": "Material UI",
@@ -152,13 +152,6 @@
       "size": "small",
       "angle": 240,
       "tooltipColor": "#38B2AC"
-    },
-    {
-      "name": "TypeScript",
-      "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
-      "size": "small",
-      "angle": 300,
-      "tooltipColor": "#3178C6"
     }
   ]
 }
