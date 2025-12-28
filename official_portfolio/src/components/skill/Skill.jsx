@@ -29,6 +29,11 @@ const SkillsSection = () => {
           tooltipColor: "#3178C6",
         },
         {
+          name: "Vue.js",
+          src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
+          tooltipColor: "#41B883",
+        },
+        {
           name: "Tailwind CSS",
           src: "https://raw.githubusercontent.com/devicons/devicon/v2.16.0/icons/tailwindcss/tailwindcss-original.svg",
           tooltipColor: "#38B2AC",
@@ -66,7 +71,7 @@ const SkillsSection = () => {
       ],
     },
     backend: {
-      title: "MERN Stack & Security",
+      title: "Backend & Security",
       description:
         "Server-side and security technologies for full-stack capability.",
       icons: [
@@ -86,19 +91,29 @@ const SkillsSection = () => {
           tooltipColor: "#339933",
         },
         {
+          name: "Supabase",
+          src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg",
+          tooltipColor: "#006239",
+        },
+        {
           name: "Auth.js",
           src: "https://authjs.dev/img/etc/logo-sm.webp",
           tooltipColor: "#000000",
         },
         {
+          name: "Python",
+          src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+          tooltipColor: "#2b5b84",
+        },
+        {
+          name: "FastAPI",
+          src: "fastapi.svg",
+          tooltipColor: "#009485",
+        },
+        {
           name: "Zod",
           src: "https://raw.githubusercontent.com/colinhacks/zod/HEAD/logo.svg",
           tooltipColor: "#3E67A6",
-        },
-        {
-          name: "Bcrypt",
-          src: "",
-          tooltipColor: "#000000",
         },
         {
           name: "JWT",
@@ -132,16 +147,7 @@ const SkillsSection = () => {
           src: "https://prettier.io/icon.png",
           tooltipColor: "#F7B93E",
         },
-        {
-          name: "Husky",
-          src: "",
-          tooltipColor: "#000000",
-        },
-        {
-          name: "TanStack Query",
-          src: "https://raw.githubusercontent.com/TanStack/query/main/media/emblem-light.svg",
-          tooltipColor: "#FF4154",
-        },
+
         {
           name: "Figma",
           src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
@@ -152,11 +158,7 @@ const SkillsSection = () => {
           src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg",
           tooltipColor: "#FF6C37",
         },
-        {
-          name: "Lint-Staged",
-          src: "https://avatars.githubusercontent.com/u/142687600?s=48&v=4",
-          tooltipColor: "#000000",
-        },
+
         {
           name: "AI Tools",
           src: "https://raw.githubusercontent.com/devicons/devicon/v2.16.0/icons/illustrator/illustrator-plain.svg",
