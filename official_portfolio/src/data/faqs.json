@@ -4,10 +4,6 @@
     "answer": "I specialize in the modern Next.js ecosystem, combining full-stack development with DevOps principles. My core stack includes TypeScript, Next.js (App Router), and Docker for containerization. I build robust backends using both the MERN stack and serverless solutions like Convex, ensuring end-to-end type safety."
   },
   {
-    "question": "What kind of projects have you built?",
-    "answer": "I build production-ready systems, not just hobby projects. My flagship app, 'Ezensi' (Live), is an AI-Native Blog Platform containerized with Docker and deployed via CI/CD on Render. I've also architected 'ShopEase,' a high-performance eCommerce app with advanced caching, and a secure Next.js full-stack system with custom auth."
-  },
-  {
     "question": "Do you have experience with DevOps and Deployment?",
     "answer": "Yes. I move beyond basic deployments by using Docker to containerize applications, ensuring consistent environments from development to production. I implement Multi-Stage builds to optimize image sizes (reducing my latest app to ~276MB) and set up automated CI/CD pipelines on platforms like Render."
   },
