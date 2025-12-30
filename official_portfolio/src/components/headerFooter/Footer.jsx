@@ -115,7 +115,7 @@ const Footer = () => {
               Open to freelance, consulting, or just a tech chat over coffee.
             </p>
             <motion.a
-              href="https://www.linkedin.com/in/sachinpro/"
+              href="https://www.linkedin.com/in/mustafa-tawab"
               target="_blank"
               className="px-6 py-3 rounded-full text-sm font-medium relative overflow-hidden"
               style={{
