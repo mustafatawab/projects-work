@@ -156,8 +156,8 @@ const Footer = () => {
             style={{ color: themeColors.summeryText }}
           >
             © {new Date().getFullYear()}{" "}
-            <a href="https://www.linkedin.com/in/sachinpro/">
-              <span style={{ color: themeColors.primaryColor }}>Sachin</span>
+            <a href="https://www.linkedin.com/in/mustafa-tawab/">
+              <span style={{ color: themeColors.primaryColor }}>Mustafa</span>
             </a>{" "}
             · Coded with intent, designed with care.
           </motion.p>
