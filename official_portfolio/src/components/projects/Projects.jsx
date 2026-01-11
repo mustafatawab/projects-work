@@ -54,6 +54,27 @@ const projects = [
     projectColor: "#dd1d4a",
   },
   {
+    title: "Taskflow",
+    subtitle: "Task Management System",
+    description:
+      "Taskflow is a task management system that allows users to create and manage tasks. It has full Authentication and Authorization system. It is production ready and deployed on Vercel and integrated CI/CD pipeline.",
+    tags: [
+      "nextjs",
+      "tenstack",
+      "tailwind css",
+      "shadcn ui",
+      "typescript",
+      "jwt",
+      "neon",
+      "prisma",
+    ],
+    image: "taskflow.png",
+    liveDemo: "https://mustafa-taskflow.vercel.app/",
+    githubRepo:
+      "https://github.com/mustafatawab/Nextjs_projects/tree/main/taskflow",
+    projectColor: "#e5a000",
+  },
+  {
     title: "Modern Portfolio",
     subtitle: "Mustafa - Full Stack Developer",
     description:
@@ -140,7 +161,7 @@ const projects = [
   {
     title: "Pharmacy Management System",
     subtitle: "Manage Pharmacy Stocks and Sales",
-    description: 
+    description:
       "A comprehensive Pharmacy Management System built with a Next.js and TypeScript frontend, complemented by a FastAPI backend. The application features a sleek UI using Shadcn UI and Tailwind CSS, with React Toastify for notifications. It utilizes Neon DB and PostgreSQL for robust data management, ensuring efficient handling of pharmacy stocks and sales.",
     tags: [
       "Next.js",
