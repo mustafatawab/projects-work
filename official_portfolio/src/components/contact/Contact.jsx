@@ -71,7 +71,7 @@ const ContactSection = () => {
               {
                 icon: "MapPin",
                 title: "Location",
-                value: "Near Holly Family Hospital, Islamabad, Pakistan",
+                value: "Islamabad, Pakistan",
               },
             ].map((item, i) => (
               <motion.div
