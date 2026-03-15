@@ -75,7 +75,7 @@ function EducationCard({ item }) {
               style={{ color: themeColors.summeryText }}
             >
               {item.description.map((point, i) => (
-                <li key={i}>{point}</li>
+                <li className="list-disc" key={i}>{point}</li>
               ))}              
             </ol>
           )}
