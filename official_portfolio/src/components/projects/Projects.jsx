@@ -5,13 +5,13 @@ import ProjectCard from "./ProjectCard";
 
 const projects = [
   {
-    title: "Upcoming MERN Stack Project",
+    title: "Upcoming Full Stack Project",
     subtitle: "Coming Soon",
     description:
       "I'm currently architecting a new, full-stack MERN application with a Next.js 16 frontend. This project will focus on scalable real-time features and advanced backend architecture. The initial code will be pushed to GitHub soon — stay tuned!",
-    tags: ["Ongoing", "MERN Stack", "Next.js", "TypeScript"],
+    tags: ["Ongoing", "Node.js","Prisma", "PostgreSQL", "Monolithic Architecture", "Next.js", "TypeScript"],
     image: "/comingSoon.webp",
-    liveDemo: "#",
+    liveDemo: "https://maktab-one-lemon.vercel.app/",
     githubRepo: "#",
     projectColor: "#9333ea",
   },
