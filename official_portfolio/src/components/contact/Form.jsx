@@ -22,21 +22,13 @@ function Form({ itemVariants }) {
 
     emailjs
       .sendForm(
-        "service_a0f3apm", // EmailJS service ID
-        "template_r55v18y", // EmailJS template ID
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         form.current,
         {
-          publicKey: "C4-lqD5NF19-WgYUq", // EmailJS publicKey
+          publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
         }
       )
-      .then(() => {
-        "service_a0f3apm", // EmailJS service ID
-          "template_ujk5y3i", // EmailJS template ID
-          form.current,
-          {
-            publicKey: "C4-lqD5NF19-WgYUq", // EmailJS publicKey
-          };
-      })
       .then(
         () => {
           setStatus("success");
