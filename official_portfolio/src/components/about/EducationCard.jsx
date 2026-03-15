@@ -6,15 +6,25 @@ function EducationCard({ item }) {
   return (
     <div className="flex relative pl-14">
       <div
-        className="absolute left-0 w-10 h-10 rounded-full flex items-center justify-center text-xl z-10"
+        className="absolute left-0 w-10 h-10 rounded-full flex items-center justify-center text-xl z-10 overflow-hidden"
         style={{
-          backgroundColor: themeColors.bg,
+          backgroundColor: typeof item.icon === "string" && (item.icon.startsWith("/") || /\.(png|jpe?g|svg|webp)$/i.test(item.icon)) 
+            ? "#1a1a1a" // Dark background specifically for logos to make them pop (especially white ones)
+            : themeColors.bg,
           border: `3px solid ${themeColors.primaryColor}`,
           boxShadow: `0 0 0 4px ${themeColors.bg}`,
           color: themeColors.primaryColor,
         }}
       >
-        {item.icon}
+        {typeof item.icon === "string" && (item.icon.startsWith("/") || /\.(png|jpe?g|svg|webp)$/i.test(item.icon)) ? (
+          <img 
+            src={item.icon} 
+            alt={item.title} 
+            className="w-full h-full object-contain p-1.5"
+          />
+        ) : (
+          item.icon
+        )}
       </div>
 
       <div className="w-full">
