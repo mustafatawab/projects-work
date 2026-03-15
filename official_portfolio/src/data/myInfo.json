@@ -7,6 +7,18 @@
   "image": "/mustafatawabb.png",
   "experience": [
     {
+      "title": " Full Stack Developer - Atlas Solution",
+      "location": "Gulberg Arena Mall, Islamabad",
+      "duration": "March 2026 - Present",
+      "description": [
+        "Leading the end-to-end development of a comprehensive School Management System using the MERN stack, transforming business requirements into scalable technical solutions.",
+        "Owning the full product lifecycle from architectural planning and database design to frontend implementation and deployment.",
+        "Expertly debugging and troubleshooting complex WordPress website issues to improve performance, security, and user experience.",
+        "Maintaining high standards of code quality and consistency by implementing professional workflows with Husky and ESLint."
+      ],
+      "icon": "💻"
+    },
+    {
       "title": " Lead Frontend Developer - Nodesol Corp",
       "location": "Near Marhaba Plaza, Mingora Swat, Pakistan",
       "duration": "July 2024 - July 2025",
